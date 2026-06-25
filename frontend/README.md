@@ -34,18 +34,7 @@
 
 **ProctorIQ** represents a paradigm shift in online examination architecture. Moving beyond standard form-based tests, ProctorIQ establishes a cryptographically secure environment. By utilizing deep state tracking, dynamic question algorithms, and strict **JSON Web Token (JWT)** authentication routing, we guarantee complete academic integrity.
 
-<details>
-  <summary><b>📺 View System Interface (Click to Expand)</b></summary>
-  <div align="center">
-    <img src="https://raw.githubusercontent.com/kyeotic/kyeotic/main/assets/dashboard-placeholder.png" alt="App Preview" width="850" style="border-radius: 12px; border: 2px solid #2563eb; box-shadow: 0 0 30px rgba(37, 99, 235, 0.4); margin-top: 15px;"/>
-  </div>
-</details>
 
-<br>
-<div align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="80%" />
-</div>
-<br>
 
 ## 🏗️ The Tri-Node Architecture
 
