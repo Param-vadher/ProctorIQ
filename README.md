@@ -110,67 +110,107 @@
 
 ---
 
-## 📸 System Gallery
-
 <div align="center">
 
-<img src="https://img.shields.io/badge/─────────────%20LIVE%20INTERFACE%20PREVIEWS%20─────────────-0f172a?style=for-the-badge&logoColor=60a5fa"/>
+<h2>📸 System Gallery</h2>
 
----
-
-### 🏠 Public Portal
-<img src="https://img.shields.io/badge/🌐 Role-Public-2563eb?style=flat-square"/>
-<img src="https://img.shields.io/badge/🔍 SEO-Optimized-0f172a?style=flat-square&logoColor=60a5fa"/>
-<img src="https://img.shields.io/badge/📱 Responsive-Yes-1d4ed8?style=flat-square"/>
-
-<br><br>
-
-<kbd><img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/1.home.png" width="88%"/></kbd>
-
-<br><br>
-
----
-
-### 👨‍🎓 Student Examination Node
-<img src="https://img.shields.io/badge/🎓 Role-Student-2563eb?style=flat-square"/>
-<img src="https://img.shields.io/badge/🛡️ Security-Zero_Trust-0f172a?style=flat-square&logoColor=60a5fa"/>
-<img src="https://img.shields.io/badge/⏱️ Monitored-Live-1d4ed8?style=flat-square"/>
-
-<br><br>
-
-<kbd><img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/2.student.png" width="47%"/></kbd>&nbsp;
-<kbd><img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/3.student.png" width="47%"/></kbd>
-
-<br><br>
-
----
-
-### 👨‍🏫 Teacher Command Center
-<img src="https://img.shields.io/badge/🏫 Role-Teacher-2563eb?style=flat-square"/>
-<img src="https://img.shields.io/badge/📥 Tools-Bulk_Import-0f172a?style=flat-square&logoColor=60a5fa"/>
-<img src="https://img.shields.io/badge/📡 View-Live_Proctor-1d4ed8?style=flat-square"/>
-
-<br><br>
-
-<kbd><img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/4.teacher.png" width="31%"/></kbd>&nbsp;
-<kbd><img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/5.teacher.png" width="31%"/></kbd>&nbsp;
-<kbd><img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/6.teacher.png" width="31%"/></kbd>
-
-<br><br>
-
----
-
-### 👑 Admin Command Dashboard
-<img src="https://img.shields.io/badge/👑 Role-Admin-2563eb?style=flat-square"/>
-<img src="https://img.shields.io/badge/⚡ Access-God_Mode-0f172a?style=flat-square&logoColor=60a5fa"/>
-<img src="https://img.shields.io/badge/📊 Analytics-Global-1d4ed8?style=flat-square"/>
-
-<br><br>
-
-<kbd><img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/7.admin.png" width="47%"/></kbd>&nbsp;
-<kbd><img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/8.admin.png" width="47%"/></kbd>
+<img src="https://img.shields.io/badge/LIVE%20INTERFACE%20PREVIEWS-0f172a?style=for-the-badge&logo=eye&logoColor=60a5fa" />
 
 </div>
+
+<br>
+
+<!-- ─── 1. HOME ─────────────────────────────── -->
+<table width="100%">
+  <tr>
+    <td align="center" style="padding: 20px; border: 2px solid #2563eb; border-radius: 16px;">
+      <h3>🏠 Public Portal</h3>
+      <img src="https://img.shields.io/badge/Role-Public-2563eb?style=flat-square&logo=internet-explorer&logoColor=white" />&nbsp;
+      <img src="https://img.shields.io/badge/SEO-Optimized-0f172a?style=flat-square&logo=google&logoColor=60a5fa" />&nbsp;
+      <img src="https://img.shields.io/badge/Responsive-Yes-1d4ed8?style=flat-square&logo=responsively-app&logoColor=white" />
+      <br><br>
+      <img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/1.home.png" width="95%" style="border-radius: 10px;" />
+      <br><br>
+      <i>Clean landing page built for first impressions and full SEO discoverability.</i>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- ─── 2 & 3. STUDENT ────────────────────── -->
+<table width="100%">
+  <tr>
+    <td colspan="2" align="center" style="padding: 14px 20px 8px; border: 2px solid #1d4ed8; border-radius: 16px 16px 0 0;">
+      <h3>👨‍🎓 Student Examination Node</h3>
+      <img src="https://img.shields.io/badge/Role-Student-2563eb?style=flat-square&logo=academia&logoColor=white" />&nbsp;
+      <img src="https://img.shields.io/badge/Security-Zero_Trust-0f172a?style=flat-square&logo=shield&logoColor=60a5fa" />&nbsp;
+      <img src="https://img.shields.io/badge/Monitored-Live-1d4ed8?style=flat-square&logo=circle&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" style="padding: 12px; border: 2px solid #1d4ed8; border-top: none; border-right: 1px solid #1d4ed8; border-radius: 0 0 0 16px;">
+      <img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/2.student.png" width="100%" style="border-radius: 8px;" />
+      <br><sub>📋 Exam Lobby & Pre-Check</sub>
+    </td>
+    <td width="50%" align="center" style="padding: 12px; border: 2px solid #1d4ed8; border-top: none; border-left: 1px solid #1d4ed8; border-radius: 0 0 16px 0;">
+      <img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/3.student.png" width="100%" style="border-radius: 8px;" />
+      <br><sub>🎯 Live Exam Wrapper in Session</sub>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- ─── 4, 5, 6. TEACHER ──────────────────── -->
+<table width="100%">
+  <tr>
+    <td colspan="3" align="center" style="padding: 14px 20px 8px; border: 2px solid #2563eb; border-radius: 16px 16px 0 0;">
+      <h3>👨‍🏫 Teacher Command Center</h3>
+      <img src="https://img.shields.io/badge/Role-Teacher-2563eb?style=flat-square&logo=chalk&logoColor=white" />&nbsp;
+      <img src="https://img.shields.io/badge/Tools-Bulk_Import-0f172a?style=flat-square&logo=database&logoColor=60a5fa" />&nbsp;
+      <img src="https://img.shields.io/badge/View-Live_Proctor-1d4ed8?style=flat-square&logo=eye&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" align="center" style="padding: 10px; border: 2px solid #2563eb; border-top: none; border-right: 1px solid #2563eb; border-radius: 0 0 0 16px;">
+      <img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/4.teacher.png" width="100%" style="border-radius: 8px;" />
+      <br><sub>📥 Bulk Question Importer</sub>
+    </td>
+    <td width="33%" align="center" style="padding: 10px; border-top: none; border-bottom: 2px solid #2563eb;">
+      <img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/5.teacher.png" width="100%" style="border-radius: 8px;" />
+      <br><sub>📡 Live Proctor Hub</sub>
+    </td>
+    <td width="33%" align="center" style="padding: 10px; border: 2px solid #2563eb; border-top: none; border-left: 1px solid #2563eb; border-radius: 0 0 16px 0;">
+      <img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/6.teacher.png" width="100%" style="border-radius: 8px;" />
+      <br><sub>✅ Evaluation Center</sub>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- ─── 7 & 8. ADMIN ──────────────────────── -->
+<table width="100%">
+  <tr>
+    <td colspan="2" align="center" style="padding: 14px 20px 8px; border: 2px solid #60a5fa; border-radius: 16px 16px 0 0;">
+      <h3>👑 Admin Command Dashboard</h3>
+      <img src="https://img.shields.io/badge/Role-Admin-2563eb?style=flat-square&logo=verified&logoColor=white" />&nbsp;
+      <img src="https://img.shields.io/badge/Access-God_Mode-0f172a?style=flat-square&logo=star&logoColor=60a5fa" />&nbsp;
+      <img src="https://img.shields.io/badge/Analytics-Global-1d4ed8?style=flat-square&logo=bar-chart&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" style="padding: 12px; border: 2px solid #60a5fa; border-top: none; border-right: 1px solid #60a5fa; border-radius: 0 0 0 16px;">
+      <img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/7.admin.png" width="100%" style="border-radius: 8px;" />
+      <br><sub>👥 User Accounts Manager</sub>
+    </td>
+    <td width="50%" align="center" style="padding: 12px; border: 2px solid #60a5fa; border-top: none; border-left: 1px solid #60a5fa; border-radius: 0 0 16px 0;">
+      <img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/8.admin.png" width="100%" style="border-radius: 8px;" />
+      <br><sub>📈 Platform Statistics & Overview</sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
