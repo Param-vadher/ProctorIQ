@@ -328,11 +328,8 @@ npm run dev
   <img src="https://img.shields.io/badge/Email-0f172a?style=for-the-badge&logo=gmail&logoColor=60a5fa&label=Drop%20a%20Mail" alt="Email"/>
 </a>
 
-<br><br>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Param-vadher&theme=tokyo-night&bg_color=0f172a&color=60a5fa&line=2563eb&point=60a5fa&area=true&hide_border=true&area_color=1e3a5f" alt="Activity Graph" width="90%"/>
 
-<br>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=14,20,24&height=130&section=footer" alt="Footer" width="100%"/>
 
