@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /login
+Allow: /register
+
+Disallow: /admin/
+Disallow: /teacher/
+Disallow: /student/
+
+Sitemap: https://proctoriq.com/sitemap.xml

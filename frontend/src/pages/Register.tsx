@@ -3,6 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import api from '../services/api';
 import { User, Lock, Mail, Camera, Home as HomeIcon, Phone } from 'lucide-react';
 import Logo from '../components/Logo';
+import SEO from '../components/SEO';
 
 const Register = () => {
   const [name, setName] = useState('');
@@ -57,6 +58,7 @@ const Register = () => {
 
   return (
     <div className="d-flex flex-column min-vh-100" style={{ backgroundColor: 'var(--bg-porcelain)' }}>
+      <SEO title="Register - ProctorIQ" description="Create a new ProctorIQ account." />
       {/* Navbar for going back home */}
       <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm mb-auto">
         <div className="container">

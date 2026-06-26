@@ -4,6 +4,7 @@ import { motion, type Variants } from 'framer-motion';
 import { ShieldCheck, MonitorPlay, BarChart3, Users, ChevronRight, Home as HomeIcon, Phone, Globe, FileText } from 'lucide-react';
 import Logo from '../components/Logo';
 import api from '../services/api';
+import SEO from '../components/SEO';
 
 // Animation variants
 const fadeInUp: Variants = {
@@ -54,6 +55,10 @@ const Home: React.FC = () => {
 
   return (
     <div className="min-vh-100 d-flex flex-column" style={{ backgroundColor: 'var(--bg-porcelain)', overflowX: 'hidden' }}>
+      <SEO 
+        title="ProctorIQ - Intelligent Online Examination" 
+        description="ProctorIQ is an advanced AI-powered online examination platform designed for secure, seamless, and intelligent testing. Maintain academic integrity with advanced AI-driven monitoring." 
+      />
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm sticky-top z-3">
         <div className="container">

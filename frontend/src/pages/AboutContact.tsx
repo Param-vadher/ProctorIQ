@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { HelpCircle, Mail, MapPin, Phone, Home as HomeIcon } from 'lucide-react';
 import Logo from '../components/Logo';
 import api from '../services/api';
+import SEO from '../components/SEO';
 
 const AboutContact: React.FC = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -28,6 +29,7 @@ const AboutContact: React.FC = () => {
 
   return (
     <div className="min-vh-100" style={{ backgroundColor: 'var(--bg-porcelain)' }}>
+      <SEO title="About Us - ProctorIQ" description="Learn more about ProctorIQ and get in touch with our team." />
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
         <div className="container">
