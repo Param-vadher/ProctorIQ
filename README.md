@@ -20,21 +20,8 @@
 
 <br><br>
 
-<!-- Live Stats Badges -->
-<a href="https://github.com/Param-vadher/ProctorIQ/stargazers">
-  <img src="https://img.shields.io/github/stars/Param-vadher/ProctorIQ?style=for-the-badge&logo=starship&color=2563eb&labelColor=0f172a&logoColor=fbbf24" alt="Stars"/>
-</a>
-<a href="https://github.com/Param-vadher/ProctorIQ/network/members">
-  <img src="https://img.shields.io/github/forks/Param-vadher/ProctorIQ?style=for-the-badge&logo=git-fork&color=1d4ed8&labelColor=0f172a&logoColor=60a5fa" alt="Forks"/>
-</a>
-<a href="https://github.com/Param-vadher/ProctorIQ/commits/main">
-  <img src="https://img.shields.io/github/last-commit/Param-vadher/ProctorIQ?style=for-the-badge&logo=github-actions&color=2563eb&labelColor=0f172a&logoColor=white" alt="Last Commit"/>
-</a>
-<a href="https://github.com/Param-vadher/ProctorIQ/issues">
-  <img src="https://img.shields.io/github/issues/Param-vadher/ProctorIQ?style=for-the-badge&logo=github&color=0f172a&labelColor=1e3a5f&logoColor=60a5fa" alt="Issues"/>
-</a>
 
-<br><br>
+
 
 <!-- Tech Stack Pill Badges -->
 <img src="https://img.shields.io/badge/React_19-61DAFB?style=flat-square&logo=react&logoColor=0f172a" alt="React"/>
