@@ -1,45 +1,71 @@
 <div align="center">
 
-<!-- Animated Header Banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e3a5f,50:2563eb,100:1e3a5f&height=230&section=header&text=ProctorIQ&fontSize=90&fontAlignY=38&animation=twinkling&fontColor=ffffff&desc=Next-Generation%20Examination%20Engine&descAlignY=58&descAlign=50" alt="ProctorIQ Header" width="100%"/>
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                   HERO HEADER                      -->
+<!-- ═══════════════════════════════════════════════════ -->
 
-<!-- Logo -->
-<img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/logo/proctoriq.png" alt="ProctorIQ Logo" width="280"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=14,20,24&height=260&section=header&text=ProctorIQ&fontSize=95&fontAlignY=38&animation=twinkling&fontColor=ffffff&desc=⚡%20Next-Generation%20Examination%20Security%20Engine%20⚡&descAlignY=58&descAlign=50&descSize=18" alt="ProctorIQ Banner" width="100%"/>
 
 <br>
 
-<!-- Animated Typing SVG -->
+<!-- LOGO -->
+<img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/logo/proctoriq.png" alt="ProctorIQ Logo" width="260" style="margin: 10px 0; filter: drop-shadow(0 0 20px rgba(96,165,250,0.6));"/>
+
+<br>
+
+<!-- Animated Typing -->
 <a href="https://github.com/Param-vadher/ProctorIQ">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1200&color=60A5FA&center=true&vCenter=true&width=700&lines=Zero-Trust+Examination+Security+%F0%9F%94%90;Dynamic+Difficulty+Question+Pooling+%F0%9F%8E%B2;Real-Time+Live+Proctoring+Hub+%F0%9F%93%A1;Cryptographic+Auth+%2B+JWT+Routing+%F0%9F%AA%96" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=20&pause=1000&color=60A5FA&center=true&vCenter=true&width=750&lines=🔐+Zero-Trust+Examination+Architecture;🎲+Dynamic+Difficulty+Question+Pooling;📡+Real-Time+Live+Proctoring+Hub;🛡️+Active+Session+Warden+Enforcement;🔑+Cryptographic+JWT+Auth+Routing" alt="Typing SVG"/>
 </a>
 
 <br><br>
 
-<!-- Repo Metrics Badges -->
-<img src="https://img.shields.io/github/stars/Param-vadher/ProctorIQ?style=for-the-badge&logo=github&color=2563eb&labelColor=0f172a&logoColor=white" alt="Stars"/>
-<img src="https://img.shields.io/github/forks/Param-vadher/ProctorIQ?style=for-the-badge&logo=git&color=1d4ed8&labelColor=0f172a&logoColor=white" alt="Forks"/>
-<img src="https://img.shields.io/github/last-commit/Param-vadher/ProctorIQ?style=for-the-badge&logo=github-actions&color=2563eb&labelColor=0f172a&logoColor=white" alt="Last Commit"/>
+<!-- Live Stats Badges -->
+<a href="https://github.com/Param-vadher/ProctorIQ/stargazers">
+  <img src="https://img.shields.io/github/stars/Param-vadher/ProctorIQ?style=for-the-badge&logo=starship&color=2563eb&labelColor=0f172a&logoColor=fbbf24" alt="Stars"/>
+</a>
+<a href="https://github.com/Param-vadher/ProctorIQ/network/members">
+  <img src="https://img.shields.io/github/forks/Param-vadher/ProctorIQ?style=for-the-badge&logo=git-fork&color=1d4ed8&labelColor=0f172a&logoColor=60a5fa" alt="Forks"/>
+</a>
+<a href="https://github.com/Param-vadher/ProctorIQ/commits/main">
+  <img src="https://img.shields.io/github/last-commit/Param-vadher/ProctorIQ?style=for-the-badge&logo=github-actions&color=2563eb&labelColor=0f172a&logoColor=white" alt="Last Commit"/>
+</a>
+<a href="https://github.com/Param-vadher/ProctorIQ/issues">
+  <img src="https://img.shields.io/github/issues/Param-vadher/ProctorIQ?style=for-the-badge&logo=github&color=0f172a&labelColor=1e3a5f&logoColor=60a5fa" alt="Issues"/>
+</a>
 
 <br><br>
 
-<!-- Quick Nav Buttons -->
-<a href="#-the-tri-node-architecture"><img src="https://img.shields.io/badge/%E2%9A%A1%20Architecture-0f172a?style=for-the-badge&logoColor=white" alt="Architecture"/></a>&nbsp;
-<a href="#-system-gallery"><img src="https://img.shields.io/badge/%F0%9F%93%B8%20Gallery-2563eb?style=for-the-badge&logoColor=white" alt="Gallery"/></a>&nbsp;
-<a href="#%EF%B8%8F-core-subsystems"><img src="https://img.shields.io/badge/%E2%9A%99%EF%B8%8F%20Subsystems-0f172a?style=for-the-badge&logoColor=white" alt="Subsystems"/></a>&nbsp;
-<a href="#-initialization-sequence"><img src="https://img.shields.io/badge/%F0%9F%9A%80%20Deploy-2563eb?style=for-the-badge&logoColor=white" alt="Deploy"/></a>
+<!-- Tech Stack Pill Badges -->
+<img src="https://img.shields.io/badge/React_19-61DAFB?style=flat-square&logo=react&logoColor=0f172a" alt="React"/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" alt="Node"/>
+<img src="https://img.shields.io/badge/Express-0f172a?style=flat-square&logo=express&logoColor=60a5fa" alt="Express"/>
+<img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB"/>
+<img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite"/>
+<img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=60a5fa" alt="JWT"/>
+<img src="https://img.shields.io/badge/Bcrypt-0f172a?style=flat-square&logo=letsencrypt&logoColor=60a5fa" alt="Bcrypt"/>
+
+<br><br>
+
+<!-- Quick Navigation -->
+<a href="#-what-is-proctoriq"><img src="https://img.shields.io/badge/📖 About-0f172a?style=for-the-badge" /></a>&nbsp;
+<a href="#-the-tri-node-architecture"><img src="https://img.shields.io/badge/⚡ Architecture-2563eb?style=for-the-badge" /></a>&nbsp;
+<a href="#-system-gallery"><img src="https://img.shields.io/badge/📸 Gallery-0f172a?style=for-the-badge" /></a>&nbsp;
+<a href="#️-core-subsystems"><img src="https://img.shields.io/badge/⚙️ Features-2563eb?style=for-the-badge" /></a>&nbsp;
+<a href="#-initialization-sequence"><img src="https://img.shields.io/badge/🚀 Deploy-0f172a?style=for-the-badge" /></a>
 
 </div>
 
 ---
 
-## 🌌 What is ProctorIQ?
+## 📖 What is ProctorIQ?
 
-**ProctorIQ** is a next-generation, full-stack online examination platform built on a **Zero-Trust security architecture**. It moves beyond basic quiz forms to create a cryptographically hardened examination environment with:
+> **ProctorIQ** is a next-generation, full-stack online examination platform engineered on a **Zero-Trust security architecture**. Built for institutions that demand airtight academic integrity.
 
-- 🔐 **JWT-based role routing** — Teachers, Students, and Admins each enter a completely separate, protected portal.
-- 🧠 **Dynamic exam generation** — Every student gets a unique question permutation based on `Easy / Medium / Hard` config.
-- 📡 **Real-time proctoring** — Teachers watch live exam telemetry as it streams from each active session.
-- 🛡️ **Active Session Warden** — Every click, tab-switch, and answer is tracked and enforced server-side.
+| 🔐 JWT Role Routing | 🧠 Dynamic Exam Engine | 📡 Live Proctoring | 🛡️ Session Warden |
+|---|---|---|---|
+| Separate hardened portals per role | Unique question permutations per student | Real-time telemetry stream to teachers | Tracks every click, tab, and answer |
 
 <br>
 
@@ -47,7 +73,7 @@
 
 <div align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=react,ts,nodejs,express,mongodb,vite,html,css,git,github&perline=10&theme=light" alt="Tech Stack" />
+    <img src="https://skillicons.dev/icons?i=react,ts,nodejs,express,mongodb,vite,html,css,git,github&perline=10&theme=dark" alt="Tech Stack Dark"/>
   </a>
 </div>
 
@@ -55,41 +81,41 @@
 
 ## 🏗️ The Tri-Node Architecture
 
-ProctorIQ segregates users into three distinct, hyper-secure portals managed by strict React Protected Routes and Backend Middleware.
+> ProctorIQ separates every user into one of three cryptographically isolated portals, each governed by strict **React Protected Routes** + **Backend JWT Middleware**.
 
-<table width="100%" style="border-collapse: separate; border-spacing: 12px;">
+<table width="100%">
   <tr>
-    <td width="33%" align="center" valign="top" style="border: 2px solid #2563eb; border-radius: 12px; padding: 18px;">
-      <h3>👨‍🏫 Teacher Node</h3>
-      <img src="https://img.shields.io/badge/Role-Teacher-2563eb?style=flat-square&logoColor=white" />
+    <td width="33%" align="center" valign="top" style="border: 2px solid #2563eb; border-radius: 14px; padding: 20px; background: linear-gradient(135deg,#0f172a,#1e3a5f);">
+      <img src="https://img.shields.io/badge/👨‍🏫 TEACHER_NODE-2563eb?style=for-the-badge&logoColor=white"/>
       <br><br>
       <ul align="left">
-        <li><b>📥 Bulk Question Importer</b></li>
-        <li><b>⚙️ Dynamic Exam Configs</b></li>
-        <li><b>📡 Live Proctor Hub</b></li>
-        <li><b>✅ Evaluation Center</b></li>
+        <li>📥 <b>Bulk Question Importer</b></li>
+        <li>⚙️ <b>Dynamic Exam Configurator</b></li>
+        <li>📡 <b>Live Proctor Hub</b></li>
+        <li>✅ <b>Evaluation Center</b></li>
+        <li>📊 <b>Result Analytics</b></li>
       </ul>
     </td>
-    <td width="33%" align="center" valign="top" style="border: 2px solid #2563eb; border-radius: 12px; padding: 18px;">
-      <h3>👨‍🎓 Student Node</h3>
-      <img src="https://img.shields.io/badge/Role-Student-1d4ed8?style=flat-square&logoColor=white" />
+    <td width="33%" align="center" valign="top" style="border: 2px solid #1d4ed8; border-radius: 14px; padding: 20px; background: linear-gradient(135deg,#0f172a,#1e3a5f);">
+      <img src="https://img.shields.io/badge/👨‍🎓 STUDENT_NODE-1d4ed8?style=for-the-badge&logoColor=white"/>
       <br><br>
       <ul align="left">
-        <li><b>🔍 Pre-Exam Verification</b></li>
-        <li><b>🎯 Live Exam Wrapper</b></li>
-        <li><b>📋 Teacher Directory</b></li>
-        <li><b>🚪 Exam Lobby</b></li>
+        <li>🔍 <b>Pre-Exam Verification</b></li>
+        <li>🎯 <b>Live Exam Wrapper</b></li>
+        <li>🛡️ <b>Session Warden</b></li>
+        <li>📋 <b>Teacher Directory</b></li>
+        <li>🚪 <b>Exam Lobby</b></li>
       </ul>
     </td>
-    <td width="33%" align="center" valign="top" style="border: 2px solid #2563eb; border-radius: 12px; padding: 18px;">
-      <h3>👑 Command Node</h3>
-      <img src="https://img.shields.io/badge/Role-Admin-0f172a?style=flat-square&logoColor=60a5fa" />
+    <td width="33%" align="center" valign="top" style="border: 2px solid #60a5fa; border-radius: 14px; padding: 20px; background: linear-gradient(135deg,#0f172a,#1e3a5f);">
+      <img src="https://img.shields.io/badge/👑 COMMAND_NODE-0f172a?style=for-the-badge&logoColor=60a5fa"/>
       <br><br>
       <ul align="left">
-        <li><b>🏆 Global Leaderboard</b></li>
-        <li><b>👥 User Accounts Manager</b></li>
-        <li><b>🔧 System Settings</b></li>
-        <li><b>📢 Announcements Manager</b></li>
+        <li>🏆 <b>Global Leaderboard</b></li>
+        <li>👥 <b>User Accounts Manager</b></li>
+        <li>🔧 <b>System Settings</b></li>
+        <li>📢 <b>Announcements Manager</b></li>
+        <li>📈 <b>Platform Statistics</b></li>
       </ul>
     </td>
   </tr>
@@ -101,67 +127,61 @@ ProctorIQ segregates users into three distinct, hyper-secure portals managed by 
 
 <div align="center">
 
+<img src="https://img.shields.io/badge/─────────────%20LIVE%20INTERFACE%20PREVIEWS%20─────────────-0f172a?style=for-the-badge&logoColor=60a5fa"/>
+
+---
+
 ### 🏠 Public Portal
-<img src="https://img.shields.io/badge/Role-Public-2563eb?style=flat-square&logoColor=white" />&nbsp;
-<img src="https://img.shields.io/badge/SEO-Optimized-0f172a?style=flat-square&logoColor=60a5fa" />
+<img src="https://img.shields.io/badge/🌐 Role-Public-2563eb?style=flat-square"/>
+<img src="https://img.shields.io/badge/🔍 SEO-Optimized-0f172a?style=flat-square&logoColor=60a5fa"/>
+<img src="https://img.shields.io/badge/📱 Responsive-Yes-1d4ed8?style=flat-square"/>
 
-*Clean, intuitive interface designed for maximum discoverability.*
+<br><br>
 
-<br>
+<kbd><img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/1.home.png" width="88%"/></kbd>
 
-<kbd><img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/1.home.png" width="85%" style="border-radius: 10px;"/></kbd>
+<br><br>
 
-</div>
-
-<br>
-
-<div align="center">
+---
 
 ### 👨‍🎓 Student Examination Node
-<img src="https://img.shields.io/badge/Role-Student-2563eb?style=flat-square&logoColor=white" />&nbsp;
-<img src="https://img.shields.io/badge/Security-Zero_Trust-0f172a?style=flat-square&logoColor=60a5fa" />
+<img src="https://img.shields.io/badge/🎓 Role-Student-2563eb?style=flat-square"/>
+<img src="https://img.shields.io/badge/🛡️ Security-Zero_Trust-0f172a?style=flat-square&logoColor=60a5fa"/>
+<img src="https://img.shields.io/badge/⏱️ Monitored-Live-1d4ed8?style=flat-square"/>
 
-*Real-time exam wrapper with strict active session monitoring.*
+<br><br>
 
-<br>
+<kbd><img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/2.student.png" width="47%"/></kbd>&nbsp;
+<kbd><img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/3.student.png" width="47%"/></kbd>
 
-<kbd><img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/2.student.png" width="46%" style="border-radius: 10px;"/></kbd>&nbsp;
-<kbd><img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/3.student.png" width="46%" style="border-radius: 10px;"/></kbd>
+<br><br>
 
-</div>
-
-<br>
-
-<div align="center">
+---
 
 ### 👨‍🏫 Teacher Command Center
-<img src="https://img.shields.io/badge/Role-Teacher-2563eb?style=flat-square&logoColor=white" />&nbsp;
-<img src="https://img.shields.io/badge/Tools-Bulk_Import-0f172a?style=flat-square&logoColor=60a5fa" />
+<img src="https://img.shields.io/badge/🏫 Role-Teacher-2563eb?style=flat-square"/>
+<img src="https://img.shields.io/badge/📥 Tools-Bulk_Import-0f172a?style=flat-square&logoColor=60a5fa"/>
+<img src="https://img.shields.io/badge/📡 View-Live_Proctor-1d4ed8?style=flat-square"/>
 
-*Centralized live proctoring hub and dynamic question management.*
+<br><br>
 
-<br>
+<kbd><img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/4.teacher.png" width="31%"/></kbd>&nbsp;
+<kbd><img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/5.teacher.png" width="31%"/></kbd>&nbsp;
+<kbd><img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/6.teacher.png" width="31%"/></kbd>
 
-<kbd><img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/4.teacher.png" width="30%" style="border-radius: 10px;"/></kbd>&nbsp;
-<kbd><img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/5.teacher.png" width="30%" style="border-radius: 10px;"/></kbd>&nbsp;
-<kbd><img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/6.teacher.png" width="30%" style="border-radius: 10px;"/></kbd>
+<br><br>
 
-</div>
+---
 
-<br>
+### 👑 Admin Command Dashboard
+<img src="https://img.shields.io/badge/👑 Role-Admin-2563eb?style=flat-square"/>
+<img src="https://img.shields.io/badge/⚡ Access-God_Mode-0f172a?style=flat-square&logoColor=60a5fa"/>
+<img src="https://img.shields.io/badge/📊 Analytics-Global-1d4ed8?style=flat-square"/>
 
-<div align="center">
+<br><br>
 
-### 👑 Admin Dashboard
-<img src="https://img.shields.io/badge/Role-Admin-2563eb?style=flat-square&logoColor=white" />&nbsp;
-<img src="https://img.shields.io/badge/Access-God_Mode-0f172a?style=flat-square&logoColor=60a5fa" />
-
-*Global metrics, user provisioning, and absolute system oversight.*
-
-<br>
-
-<kbd><img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/7.admin.png" width="46%" style="border-radius: 10px;"/></kbd>&nbsp;
-<kbd><img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/8.admin.png" width="46%" style="border-radius: 10px;"/></kbd>
+<kbd><img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/7.admin.png" width="47%"/></kbd>&nbsp;
+<kbd><img src="https://raw.githubusercontent.com/Param-vadher/ProctorIQ/main/Screenshorts/8.admin.png" width="47%"/></kbd>
 
 </div>
 
@@ -169,14 +189,38 @@ ProctorIQ segregates users into three distinct, hyper-secure portals managed by 
 
 ## ⚙️ Core Subsystems
 
-| # | Subsystem | Description |
-|---|-----------|-------------|
-| 🔍 | **SEO & Discoverability** | `react-helmet-async` for dynamic meta tags, `robots.txt`, and `sitemap.xml` |
-| 📥 | **Bulk JSON Import Engine** | Upload structured JSON to instantly provision subjects and questions |
-| 🛡️ | **Zero-Trust Session Warden** | `ActiveExamSessions` tracks every click, warning, and question state |
-| 🎲 | **Dynamic Exam Generator** | Unique `Easy/Medium/Hard` question permutations per candidate |
-| 📡 | **Live Proctor Hub** | High-frequency telemetry stream to teacher dashboard |
-| 🔐 | **Cryptographic Auth** | `bcrypt` + HTTP-only cookies + role-encoded JWT matrices |
+<table width="100%">
+  <tr>
+    <td width="50%" style="border: 1px solid #2563eb; border-radius: 10px; padding: 16px;">
+      <h4>🔍 SEO & Discoverability</h4>
+      <code>react-helmet-async</code> for dynamic meta tags, Open Graph, <code>robots.txt</code> + <code>sitemap.xml</code>
+    </td>
+    <td width="50%" style="border: 1px solid #2563eb; border-radius: 10px; padding: 16px;">
+      <h4>📥 Bulk JSON Import Engine</h4>
+      Upload structured JSON to instantly provision subjects and 100+ questions in one click
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" style="border: 1px solid #2563eb; border-radius: 10px; padding: 16px;">
+      <h4>🛡️ Zero-Trust Session Warden</h4>
+      <code>ActiveExamSessions</code> tracks every navigation, warning flag, and answer server-side
+    </td>
+    <td width="50%" style="border: 1px solid #2563eb; border-radius: 10px; padding: 16px;">
+      <h4>🎲 Dynamic Exam Generator</h4>
+      Unique <code>Easy / Medium / Hard</code> question permutations compiled fresh per candidate
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" style="border: 1px solid #2563eb; border-radius: 10px; padding: 16px;">
+      <h4>📡 Live Proctor Hub</h4>
+      High-frequency telemetry stream from student sessions to the teacher dashboard in real-time
+    </td>
+    <td width="50%" style="border: 1px solid #2563eb; border-radius: 10px; padding: 16px;">
+      <h4>🔐 Cryptographic Auth Layer</h4>
+      <code>bcrypt</code> password hashing + HTTP-only cookie sessions + role-encoded JWT matrices
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -191,7 +235,7 @@ sequenceDiagram
 
     T->>DB: Compile Exam Config & Import Question Pool
     S->>DB: Initiate Pre-Exam Verification
-    loop Active Exam Session Loop
+    loop 🔄 Active Exam Session Loop
         S->>DB: Fetch Dynamic Question Permutation
         S->>DB: Sync Session State & Warnings
         DB-->>T: Broadcast Live Telemetry to Proctor Hub
@@ -204,15 +248,15 @@ sequenceDiagram
 
 ## 🚀 Initialization Sequence
 
-Deploy ProctorIQ locally in under 3 minutes.
+> Deploy ProctorIQ locally in under **3 minutes**.
 
 ### 1️⃣ Prerequisites
 
-| Tool | Requirement |
-|------|-------------|
-| ![Node](https://img.shields.io/badge/Node.js-v18+-339933?style=flat-square&logo=node.js&logoColor=white) | v18 or higher |
-| ![MongoDB](https://img.shields.io/badge/MongoDB-Local_or_Atlas-47A248?style=flat-square&logo=mongodb&logoColor=white) | Any version |
-| ![Git](https://img.shields.io/badge/Git-Required-F05032?style=flat-square&logo=git&logoColor=white) | Latest stable |
+| Tool | Min Version | Badge |
+|------|------------|-------|
+| Node.js | v18+ | ![Node](https://img.shields.io/badge/Node.js-v18+-339933?style=flat-square&logo=node.js&logoColor=white) |
+| MongoDB | Any | ![Mongo](https://img.shields.io/badge/MongoDB-Local%20or%20Atlas-47A248?style=flat-square&logo=mongodb&logoColor=white) |
+| Git | Latest | ![Git](https://img.shields.io/badge/Git-Required-F05032?style=flat-square&logo=git&logoColor=white) |
 
 ### 2️⃣ Clone & Install
 
@@ -220,50 +264,43 @@ Deploy ProctorIQ locally in under 3 minutes.
 # Clone the repository
 git clone https://github.com/Param-vadher/ProctorIQ.git
 
-# Install backend dependencies
+# Install backend
 cd ProctorIQ/backend && npm install
 
-# Install frontend dependencies
+# Install frontend
 cd ../frontend && npm install
 ```
 
 ### 3️⃣ Environment Matrix
 
-Create a `.env` file in the `backend/` directory — ProctorIQ **auto-seeds the Admin account** on first boot.
+Create `.env` inside `backend/` — the server **auto-seeds the Admin** on first boot.
 
 <details>
-<summary><b>🔐 View .env Configuration</b></summary>
+<summary><b>🔐 Click to expand .env config</b></summary>
 <br/>
 
 ```env
-# -----------------------------
-# 📦 Database Connection
-# -----------------------------
+# ── Database ──────────────────────
 MONGO_URI=mongodb://localhost:27017/ProctorIQ_db
 
-# -----------------------------
-# 🔐 Security & Network
-# -----------------------------
+# ── Security & Network ────────────
 JWT_SECRET=your_super_secret_jwt_key
 PORT=5000
 FRONTEND_URL=http://localhost:5173
 
-# -----------------------------
-# 👑 Initial Admin Seeder
-# -----------------------------
+# ── Admin Seeder ──────────────────
 ADMIN_EMAIL=admin@proctoriq.com
 ADMIN_PASSWORD=admin@951052
 ```
 
 </details>
 
-### 4️⃣ Database Setup
+### 4️⃣ Database
 
-MongoDB is schema-less — **no migrations needed**. The database auto-builds on first boot.
+MongoDB is **schema-less** — no migrations needed. Auto-builds on first boot.
 
-> **💡 Tip:** Run `node reset_db.js` inside `backend/` to wipe and reseed during development.
-
-**Bulk Question Importing:** Log in as a Teacher and use the **Bulk Question Importer** to upload JSON datasets (e.g., `os_questions.json`).
+> 💡 Run `node reset_db.js` inside `backend/` to wipe & reseed during development.  
+> 📥 Use the **Bulk Question Importer** (Teacher login) to load `os_questions.json` etc.
 
 ### 5️⃣ Launch 🚀
 
@@ -272,7 +309,13 @@ cd frontend
 npm run dev
 ```
 
-> 🌐 **Client:** `http://localhost:5173` &nbsp;|&nbsp; 🔌 **Server:** `http://localhost:5000`
+<div align="center">
+
+| 🌐 Client | 🔌 Server |
+|-----------|----------|
+| `http://localhost:5173` | `http://localhost:5000` |
+
+</div>
 
 ---
 
@@ -280,16 +323,30 @@ npm run dev
 
 <div align="center">
 
-**Param Vadher** — Architect & Full-Stack Developer of ProctorIQ
+<br>
+
+<img src="https://img.shields.io/badge/──────────────────%20PARAM%20VADHER%20──────────────────-0f172a?style=for-the-badge&logoColor=60a5fa"/>
+
+**Architect & Full-Stack Developer of ProctorIQ**
 
 <br>
 
-<a href="https://github.com/Param-vadher"><img src="https://img.shields.io/badge/-GitHub_Profile-0f172a?style=for-the-badge&logo=github&logoColor=60a5fa" alt="GitHub"/></a>&nbsp;
-<a href="https://www.linkedin.com/in/param-vadher-b1a9b7333"><img src="https://img.shields.io/badge/-LinkedIn_Connect-2563eb?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>&nbsp;
-<a href="mailto:paramvadher04@gmail.com"><img src="https://img.shields.io/badge/-Send_an_Email-0f172a?style=for-the-badge&logo=gmail&logoColor=60a5fa" alt="Email"/></a>
+<a href="https://github.com/Param-vadher">
+  <img src="https://img.shields.io/badge/GitHub-0f172a?style=for-the-badge&logo=github&logoColor=60a5fa&label=@Param-vadher" alt="GitHub"/>
+</a>&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/param-vadher-b1a9b7333">
+  <img src="https://img.shields.io/badge/LinkedIn-2563eb?style=for-the-badge&logo=linkedin&logoColor=white&label=Connect" alt="LinkedIn"/>
+</a>&nbsp;&nbsp;
+<a href="mailto:paramvadher04@gmail.com">
+  <img src="https://img.shields.io/badge/Email-0f172a?style=for-the-badge&logo=gmail&logoColor=60a5fa&label=Drop%20a%20Mail" alt="Email"/>
+</a>
 
 <br><br>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e3a5f,50:2563eb,100:1e3a5f&height=120&section=footer" alt="footer" width="100%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Param-vadher&theme=tokyo-night&bg_color=0f172a&color=60a5fa&line=2563eb&point=60a5fa&area=true&hide_border=true&area_color=1e3a5f" alt="Activity Graph" width="90%"/>
+
+<br>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=14,20,24&height=130&section=footer" alt="Footer" width="100%"/>
 
 </div>
