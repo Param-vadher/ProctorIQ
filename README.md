@@ -15,7 +15,7 @@
 
 <!-- Animated Typing -->
 <a href="https://github.com/Param-vadher/ProctorIQ">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=20&pause=1000&color=60A5FA&center=true&vCenter=true&width=750&lines=🔐+Zero-Trust+Examination+Architecture;🎲+Dynamic+Difficulty+Question+Pooling;📡+Real-Time+Live+Proctoring+Hub;🛡️+Active+Session+Warden+Enforcement;🔑+Cryptographic+JWT+Auth+Routing" alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=20&pause=1000&color=60A5FA&center=true&vCenter=true&width=760&lines=Zero-Trust+Examination+Architecture;Dynamic+Difficulty+Question+Pooling;Real-Time+Live+Proctoring+Hub;Active+Session+Warden+Enforcement;Cryptographic+JWT+Auth+Routing" alt="Typing SVG"/>
 </a>
 
 <br><br>
