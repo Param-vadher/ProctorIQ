@@ -32,6 +32,7 @@
 <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite"/>
 <img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=60a5fa" alt="JWT"/>
 <img src="https://img.shields.io/badge/Bcrypt-0f172a?style=flat-square&logo=letsencrypt&logoColor=60a5fa" alt="Bcrypt"/>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"/>
 
 <br><br>
 
@@ -60,7 +61,7 @@
 
 <div align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=react,ts,nodejs,express,mongodb,vite,html,css,git,github&perline=10&theme=dark" alt="Tech Stack Dark"/>
+    <img src="https://skillicons.dev/icons?i=react,ts,nodejs,express,mongodb,vite,html,css,git,github,docker&perline=11&theme=dark" alt="Tech Stack Dark"/>
   </a>
 </div>
 
@@ -247,6 +248,16 @@
       <code>bcrypt</code> password hashing + HTTP-only cookie sessions + role-encoded JWT matrices
     </td>
   </tr>
+  <tr>
+    <td width="50%" style="border: 1px solid #2563eb; border-radius: 10px; padding: 16px;">
+      <h4>🐳 1-Click Docker Deploy</h4>
+      Containerized orchestration with <code>docker-compose</code> for seamless marketplace deployments
+    </td>
+    <td width="50%" style="border: 1px solid #2563eb; border-radius: 10px; padding: 16px;">
+      <h4>🌓 Modern UX & Dark Mode</h4>
+      Persistent dark theme toggling with non-blocking <code>react-hot-toast</code> notifications
+    </td>
+  </tr>
 </table>
 
 ---
@@ -284,6 +295,7 @@ sequenceDiagram
 | Node.js | v18+ | ![Node](https://img.shields.io/badge/Node.js-v18+-339933?style=flat-square&logo=node.js&logoColor=white) |
 | MongoDB | Any | ![Mongo](https://img.shields.io/badge/MongoDB-Local%20or%20Atlas-47A248?style=flat-square&logo=mongodb&logoColor=white) |
 | Git | Latest | ![Git](https://img.shields.io/badge/Git-Required-F05032?style=flat-square&logo=git&logoColor=white) |
+| Docker | Latest | ![Docker](https://img.shields.io/badge/Docker-Recommended-2496ED?style=flat-square&logo=docker&logoColor=white) |
 
 ### 2️⃣ Clone & Install
 
@@ -291,16 +303,14 @@ sequenceDiagram
 # Clone the repository
 git clone https://github.com/Param-vadher/ProctorIQ.git
 
-# Install backend
-cd ProctorIQ/backend && npm install
-
-# Install frontend
-cd ../frontend && npm install
+# Install dependencies (Monorepo)
+cd ProctorIQ
+npm install
 ```
 
 ### 3️⃣ Environment Matrix
 
-Create `.env` inside `backend/` — the server **auto-seeds the Admin** on first boot.
+Create `.env` inside `apps/backend/` — the server **auto-seeds the Admin** on first boot.
 
 <details>
 <summary><b>🔐 Click to expand .env config</b></summary>
@@ -326,13 +336,18 @@ ADMIN_PASSWORD=admin@951052
 
 MongoDB is **schema-less** — no migrations needed. Auto-builds on first boot.
 
-> 💡 Run `node reset_db.js` inside `backend/` to wipe & reseed during development.  
+> 💡 Run `node reset_db.js` inside `apps/backend/` to wipe & reseed during development.  
 > 📥 Use the **Bulk Question Importer** (Teacher login) to load `os_questions.json` etc.
 
 ### 5️⃣ Launch 🚀
 
+**Option A: 1-Click Docker Deployment (Recommended)**
 ```bash
-cd frontend
+docker-compose up -d --build
+```
+
+**Option B: Standard Development**
+```bash
 npm run dev
 ```
 

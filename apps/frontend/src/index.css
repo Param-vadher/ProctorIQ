@@ -1,0 +1,660 @@
+:root {
+  /* LIGHT MODE (Navy & Royal Blue) */
+  --primary-deep-slate: #0a1930;
+  /* Deep Navy for main headings */
+  --primary-slate: #172a45;
+  /* Lighter Navy for secondary elements */
+  --accent-primary: #2563eb;
+  /* Vibrant Blue 600 */
+  --accent-secondary: #3b82f6;
+  /* Lighter Blue 500 */
+  --accent-glow: rgba(37, 99, 235, 0.3);
+  --bg-primary: #ffffff;
+  --bg-secondary: #f0f4f8;
+  /* Very light blue-tinted white */
+  --bg-porcelain: #f0f4f8;
+  /* alias for bg-secondary */
+  --card-bg: #ffffff;
+  --card-glass: rgba(255, 255, 255, 0.9);
+  --text-primary: #0a1930;
+  --text-secondary: #475569;
+  --text-light: #ffffff;
+  --border-color: #e2e8f0;
+  --input-bg: #ffffff;
+
+  /* Shared Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-glow: 0 0 15px var(--accent-glow);
+}
+
+.dark-mode {
+  --primary-deep-slate: #f8fafc;
+  --primary-slate: #cbd5e1;
+  --accent-primary: #3b82f6;
+  --accent-secondary: #60a5fa;
+  --accent-glow: rgba(59, 130, 246, 0.4);
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-porcelain: #0f172a;
+  --card-bg: #1e293b;
+  --card-glass: rgba(30, 41, 59, 0.9);
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-light: #ffffff;
+  --border-color: #334155;
+  --input-bg: #0f172a;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+body {
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  font-family: 'Outfit', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-deep-slate);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  transition: color 0.3s ease;
+}
+
+/* Base Elements — only set color on plain text nodes, not on every div */
+p {
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+/* Bootstrap overrides for theme compatibility */
+.text-dark,
+.text-body,
+.text-black {
+  color: var(--text-primary) !important;
+}
+
+.text-muted {
+  color: var(--text-secondary) !important;
+}
+
+/* ── Background overrides ────────────────────────────────────────────────── */
+.bg-white {
+  background-color: var(--card-bg) !important;
+}
+
+.bg-light {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+}
+
+.bg-dark {
+  background-color: var(--primary-slate) !important;
+}
+
+/* Page-level backgrounds — use these instead of hardcoded colors */
+.page-bg {
+  background-color: var(--bg-porcelain);
+  min-height: 100vh;
+}
+
+.section-bg {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+}
+
+.card-bg-adaptive {
+  background-color: var(--card-bg) !important;
+  color: var(--text-primary) !important;
+}
+
+/* ── Navbar ──────────────────────────────────────────────────────────────── */
+.navbar.bg-white,
+.navbar-light {
+  background-color: var(--card-bg) !important;
+}
+
+/* ── Borders ─────────────────────────────────────────────────────────────── */
+.border,
+.border-bottom,
+.border-top,
+.border-start,
+.border-end {
+  border-color: var(--border-color) !important;
+}
+
+/* ── Form Controls ───────────────────────────────────────────────────────── */
+.form-control,
+.form-select,
+.input-group-text {
+  background-color: var(--input-bg);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: var(--input-bg);
+  color: var(--text-primary);
+  border-color: var(--accent-primary);
+}
+
+/* datetime-local & other special inputs */
+input[type="datetime-local"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  color-scheme: light;
+}
+
+
+/* ── Alerts ──────────────────────────────────────────────────────────────── */
+
+
+
+
+
+/* ── Badges ──────────────────────────────────────────────────────────────── */
+
+
+/* ── Glassmorphism & Cards ───────────────────────────────────────────────── */
+.glass-card {
+  background: var(--card-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-xl);
+  padding: 2.5rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--text-primary);
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 30px -5px rgba(0, 0, 0, 0.12), var(--shadow-glow);
+}
+
+.premium-card {
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  color: var(--text-primary);
+}
+
+.premium-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+  border-color: rgba(99, 102, 241, 0.3);
+}
+
+/* ── Buttons ─────────────────────────────────────────────────────────────── */
+.btn-primary-custom {
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  color: white !important;
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-primary-custom::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.btn-primary-custom:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 10px 20px var(--accent-glow);
+}
+
+.btn-primary-custom:hover::before {
+  opacity: 1;
+}
+
+.btn-outline-custom {
+  background-color: transparent;
+  color: var(--accent-primary) !important;
+  border: 2px solid var(--accent-primary);
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-outline-custom:hover {
+  background-color: var(--accent-primary);
+  color: white !important;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px var(--accent-glow);
+}
+
+/* Bootstrap outline buttons in dark mode */
+
+
+
+
+
+
+/* ── Entry Animations ────────────────────────────────────────────────────── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulseSoft {
+  0% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* ── Forms ───────────────────────────────────────────────────────────────── */
+.form-control-custom {
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  padding: 0.85rem 1.25rem;
+  transition: all 0.3s ease;
+  background-color: var(--input-bg);
+  color: var(--text-primary);
+  font-family: inherit;
+}
+
+.form-control-custom:focus {
+  background-color: var(--input-bg);
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+  outline: none;
+  transform: translateY(-1px);
+}
+
+.floating-label-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.floating-label-group input {
+  width: 100%;
+}
+
+.floating-label-group label {
+  position: absolute;
+  top: 50%;
+  left: 1.25rem;
+  transform: translateY(-50%);
+  background: transparent;
+  padding: 0 0.25rem;
+  color: var(--text-secondary);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+  font-weight: 500;
+}
+
+.floating-label-group input:focus+label,
+.floating-label-group input:not(:placeholder-shown)+label {
+  top: -0.5rem;
+  left: 1rem;
+  font-size: 0.75rem;
+  color: var(--accent-primary);
+  background: var(--card-bg);
+  border-radius: 4px;
+  padding: 0 0.4rem;
+  font-weight: 600;
+}
+
+/* ── Admin Sidebar ───────────────────────────────────────────────────────── */
+.admin-sidebar {
+  background: var(--bg-primary);
+  border-right: 1px solid var(--border-color);
+  min-height: 100vh;
+  padding-top: 2rem;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s ease;
+}
+
+.admin-sidebar .nav-link {
+  color: var(--text-secondary);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 1rem 1.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0 30px 30px 0;
+  margin-right: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.admin-sidebar .nav-link:hover,
+.admin-sidebar .nav-link.active {
+  background: linear-gradient(90deg, rgba(99, 102, 241, 0.1) 0%, transparent 100%);
+  color: var(--accent-primary);
+  transform: translateX(8px);
+  border-left: 4px solid var(--accent-primary);
+}
+
+/* ── Exam UI ─────────────────────────────────────────────────────────────── */
+.exam-sidebar {
+  background-color: var(--card-bg);
+  border-left: 1px solid var(--border-color);
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.02);
+}
+
+.question-grid-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  border: 2px solid var(--border-color);
+  background-color: var(--card-bg);
+  color: var(--text-primary);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+}
+
+.question-grid-btn:hover {
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-primary);
+}
+
+.question-grid-btn.visited {
+  background-color: var(--primary-slate);
+  color: var(--text-light);
+  /* fixed: was --bg-primary which became invisible in dark */
+  border-color: var(--primary-slate);
+}
+
+
+
+.question-grid-btn.answered {
+  background-color: var(--accent-primary);
+  color: white;
+  border-color: var(--accent-primary);
+  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.3);
+}
+
+.question-grid-btn.flagged {
+  background-color: #f97316;
+  color: white;
+  border-color: #f97316;
+  box-shadow: 0 4px 10px rgba(249, 115, 22, 0.3);
+}
+
+/* ── Toast / Network Error ───────────────────────────────────────────────── */
+.network-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #ef4444;
+  color: white;
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(239, 68, 68, 0.4);
+  z-index: 9999;
+  animation: slideUpBounce 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+@keyframes slideUpBounce {
+  0% {
+    transform: translateY(120%);
+    opacity: 0;
+  }
+
+  70% {
+    transform: translateY(-10%);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.timer-warning {
+  color: #ef4444 !important;
+  animation: pulseSoft 2s infinite;
+  background: rgba(239, 68, 68, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 8px;
+}
+
+/* ── Neo-Morphism Utilities ──────────────────────────────────────────────── */
+.glass-panel {
+  background: var(--card-glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.glass-panel:hover {
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.08);
+}
+
+.apple-card-hover {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.apple-card-hover:hover {
+  transform: translateY(-6px) scale(1.015);
+  box-shadow: var(--shadow-xl);
+}
+
+/* ── Custom Checkbox ─────────────────────────────────────────────────────── */
+.custom-checkbox-neo {
+  appearance: none;
+  background-color: var(--card-bg);
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.75em;
+  height: 1.75em;
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+  display: grid;
+  place-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.custom-checkbox-neo::before {
+  content: "";
+  width: 0.8em;
+  height: 0.8em;
+  transform: scale(0);
+  transition: 120ms transform cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: inset 1em 1em white;
+  background-color: white;
+  transform-origin: center;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.custom-checkbox-neo:hover {
+  border-color: var(--accent-primary);
+  background-color: rgba(99, 102, 241, 0.05);
+}
+
+.custom-checkbox-neo:checked {
+  background-color: var(--accent-primary);
+  border-color: var(--accent-primary);
+  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.3);
+}
+
+.custom-checkbox-neo:checked::before {
+  transform: scale(1);
+}
+
+/* ── Minimal Scrollbar ───────────────────────────────────────────────────── */
+.minimal-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.minimal-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.minimal-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 10px;
+}
+
+.minimal-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.6);
+}
+
+/* ── Theme Toggle ────────────────────────────────────────────────────────── */
+
+
+
+/* ── Header Logo ─────────────────────────────────────────────────────────── */
+.header-logo {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   NUCLEAR DARK MODE FIX — Bootstrap overrides every background via
+   --bs-table-bg so we must use !important on all table elements.
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Tables ──────────────────────────────────────────────────────────────── */
+
+
+
+
+/* table-light thead (the white header Bootstrap uses) */
+
+
+/* Striped rows */
+
+
+/* Hover rows */
+
+
+/* ── Generic row hover (both themes) ────────────────────────────────────── */
+tbody tr {
+  transition: background-color 0.15s ease;
+}
+
+/* ── Modals ──────────────────────────────────────────────────────────────── */
+
+
+
+
+/* ── btn-close ───────────────────────────────────────────────────────────── */
+
+
+/* ── Input group text ────────────────────────────────────────────────────── */
+
+
+/* ── Form helper texts ───────────────────────────────────────────────────── */
+.form-text {
+  color: var(--text-secondary) !important;
+}
+
+
+/* ── Dropdowns ───────────────────────────────────────────────────────────── */
+
+
+
+
+/* ── Select options ──────────────────────────────────────────────────────── */
+
+
+/* ── Form-check labels ───────────────────────────────────────────────────── */
+
+
+/* ── Card text inheritance ───────────────────────────────────────────────── */
+
+
+
+/* ── Bootstrap utility overrides ─────────────────────────────────────────── */
+
+
+
+/* But don't override explicit color utilities */

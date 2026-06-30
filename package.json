@@ -1,16 +1,15 @@
 {
-  "name": "proctoriq",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "proctoriq-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\""
+    "dev": "concurrently \"npm run dev -w backend\" \"npm run dev -w frontend\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "devDependencies": {
-    "concurrently": "^10.0.3"
+    "concurrently": "^10.0.3",
+    "typescript": "^5.0.0"
   }
 }

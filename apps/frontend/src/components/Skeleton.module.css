@@ -1,0 +1,39 @@
+.skeleton {
+  background: #e2e5e7;
+  background-image: linear-gradient(90deg, #e2e5e7 0px, #f2f3f4 40px, #e2e5e7 80px);
+  background-size: 300px;
+  animation: shine 1.5s infinite linear;
+  border-radius: 4px;
+}
+
+.text {
+  width: 100%;
+  height: 12px;
+  margin-bottom: 10px;
+}
+
+.title {
+  width: 50%;
+  height: 20px;
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 100px;
+}
+
+@keyframes shine {
+  0% {
+    background-position: -100px;
+  }
+  40%, 100% {
+    background-position: 200px;
+  }
+}

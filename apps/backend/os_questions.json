@@ -1,0 +1,1619 @@
+[
+  {
+    "text": "What is a process in the context of an operating system?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "Process Management",
+    "options": [
+      "A program stored on disk",
+      "An executable file waiting to be run",
+      "A program in execution",
+      "A collection of hardware resources"
+    ],
+    "correctAnswer": "A program in execution",
+    "explanation": "A process is an instance of a computer program that is being executed. It's more than just the program code; it includes the current activity, program counter, register contents, and stack.",
+    "marks": 1
+  },
+  {
+    "text": "Which of the following is NOT typically part of a Process Control Block (PCB)?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "Process Management",
+    "options": [
+      "Program counter",
+      "Process state",
+      "Memory limits",
+      "Printer queue status"
+    ],
+    "correctAnswer": "Printer queue status",
+    "explanation": "The PCB contains information associated with a specific process, such as its state, program counter, CPU registers, memory-management information, and I/O status information. Printer queue status is generally a system-wide or device-specific status, not tied to a single process's PCB.",
+    "marks": 2
+  },
+  {
+    "text": "What is the primary function of a long-term scheduler?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "Process Management",
+    "options": [
+      "To select which process should be executed next by the CPU",
+      "To swap processes between main memory and disk",
+      "To select processes from the job pool and load them into main memory for execution",
+      "To manage I/O requests from processes"
+    ],
+    "correctAnswer": "To select processes from the job pool and load them into main memory for execution",
+    "explanation": "The long-term (or job) scheduler selects processes from the job pool and loads them into memory for execution. It controls the degree of multiprogramming.",
+    "marks": 1
+  },
+  {
+    "text": "When a process is waiting for an I/O operation to complete, what state is it typically in?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "Process Management",
+    "options": [
+      "Running",
+      "Ready",
+      "New",
+      "Waiting/Blocked"
+    ],
+    "correctAnswer": "Waiting/Blocked",
+    "explanation": "A process enters the Waiting (or Blocked) state when it is waiting for some event to occur, such as the completion of an I/O operation or the reception of a signal.",
+    "marks": 2
+  },
+  {
+    "text": "Which scheduling algorithm can lead to starvation if not implemented carefully with aging?",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "Process Management",
+    "options": [
+      "Round Robin",
+      "First-Come, First-Served (FCFS)",
+      "Shortest Job First (SJF)",
+      "Priority Scheduling"
+    ],
+    "correctAnswer": "Priority Scheduling",
+    "explanation": "In Priority Scheduling, if a high-priority process continuously enters the ready queue, low-priority processes might never get to execute, leading to starvation. Aging is a technique to prevent starvation by gradually increasing the priority of processes that wait in the system for a long time.",
+    "marks": 3
+  },
+  {
+    "text": "What is the primary difference between a process and a thread?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "Process Management",
+    "options": [
+      "Processes are heavier weight and have their own address space, while threads share the same address space.",
+      "Processes run on multiple CPUs, while threads run on a single CPU.",
+      "Processes are user-level, while threads are kernel-level.",
+      "Processes are managed by the user, threads by the OS."
+    ],
+    "correctAnswer": "Processes are heavier weight and have their own address space, while threads share the same address space.",
+    "explanation": "Processes are independent execution units with their own dedicated address space, while threads are lighter-weight units of execution within a process that share the process's memory space and resources.",
+    "marks": 1
+  },
+  {
+    "text": "Context switching involves:",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "Process Management",
+    "options": [
+      "Moving a process from RAM to disk.",
+      "Saving the state of the current process and restoring the state of another process.",
+      "Changing the priority of a process.",
+      "Creating a new process."
+    ],
+    "correctAnswer": "Saving the state of the current process and restoring the state of another process.",
+    "explanation": "Context switching is the mechanism by which the operating system saves the state of the currently executing process and loads the saved state of another process, allowing multiple processes to share a single CPU.",
+    "marks": 2
+  },
+  {
+    "text": "Deadlock can occur if which of the following four conditions are not met? (Choose the option that describes the conditions NOT required for deadlock)",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "Process Management",
+    "options": [
+      "Mutual exclusion, Hold and Wait, No preemption, Circular wait",
+      "Resource sharing, Preemption, No mutual exclusion, No circular wait",
+      "Mutual exclusion, Resource sharing, Preemption, Circular wait",
+      "Shared resources, No preemption, Wait and Signal, Bounded buffer"
+    ],
+    "correctAnswer": "Mutual exclusion, Hold and Wait, No preemption, Circular wait",
+    "explanation": "Deadlock occurs if and only if all four conditions hold simultaneously: Mutual exclusion, Hold and Wait, No preemption, and Circular wait. The question asks for the option that describes the conditions NOT required, implying the option describing the conditions that ARE required.",
+    "marks": 3
+  },
+  {
+    "text": "Which type of scheduler is responsible for switching the CPU from one process to another?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "Process Management",
+    "options": [
+      "Long-term scheduler",
+      "Medium-term scheduler",
+      "Short-term scheduler (CPU scheduler)",
+      "I/O scheduler"
+    ],
+    "correctAnswer": "Short-term scheduler (CPU scheduler)",
+    "explanation": "The short-term scheduler (or CPU scheduler) selects a process from the ready queue and allocates the CPU to it. It executes frequently and decides which process should run next.",
+    "marks": 1
+  },
+  {
+    "text": "What is the purpose of the 'fork()' system call in Unix-like operating systems?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "Process Management",
+    "options": [
+      "To terminate a process.",
+      "To create a new process by duplicating the calling process.",
+      "To execute a new program in the current process.",
+      "To change the priority of a process."
+    ],
+    "correctAnswer": "To create a new process by duplicating the calling process.",
+    "explanation": "The `fork()` system call creates a new process (child process) that is an almost identical copy of the calling process (parent process). Both processes continue execution from the point of the `fork()` call.",
+    "marks": 2
+  },
+  {
+    "text": "The Banker's Algorithm is primarily used for:",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "Process Management",
+    "options": [
+      "CPU scheduling in multi-core systems.",
+      "Deadlock prevention by ensuring mutual exclusion.",
+      "Deadlock avoidance by allocating resources carefully.",
+      "Deadlock detection in real-time systems."
+    ],
+    "correctAnswer": "Deadlock avoidance by allocating resources carefully.",
+    "explanation": "The Banker's Algorithm is a deadlock avoidance algorithm that ensures that a safe state is always maintained. It grants resource requests only if doing so leaves the system in a safe state, preventing deadlocks.",
+    "marks": 3
+  },
+  {
+    "text": "What does 'CPU utilization' measure in process scheduling?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "Process Management",
+    "options": [
+      "The percentage of time the CPU is idle.",
+      "The percentage of time the CPU is busy executing processes.",
+      "The total number of processes completed per unit time.",
+      "The time taken for a process to complete its execution."
+    ],
+    "correctAnswer": "The percentage of time the CPU is busy executing processes.",
+    "explanation": "CPU utilization measures how busy the CPU is. High CPU utilization (the percentage of time the CPU is doing useful work) is generally desired to make efficient use of computing resources.",
+    "marks": 1
+  },
+  {
+    "text": "In a preemptive scheduling algorithm, what happens when a higher-priority process arrives while a lower-priority process is running?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "Process Management",
+    "options": [
+      "The higher-priority process waits until the current process completes.",
+      "The higher-priority process is placed in a waiting queue.",
+      "The currently running process is interrupted, and the higher-priority process is allocated the CPU.",
+      "Both processes run concurrently on the single CPU."
+    ],
+    "correctAnswer": "The currently running process is interrupted, and the higher-priority process is allocated the CPU.",
+    "explanation": "In preemptive scheduling, the currently running process can be interrupted and moved to the ready state if a higher-priority process becomes ready or if its time slice expires. The CPU is then allocated to the higher-priority process.",
+    "marks": 2
+  },
+  {
+    "text": "Which of the following statements about user-level threads (ULTs) and kernel-level threads (KLTs) is true?",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "Process Management",
+    "options": [
+      "ULTs are managed by the OS kernel, while KLTs are managed by a user-level library.",
+      "Blocking a ULT always blocks the entire process, while blocking a KLT only blocks that specific thread.",
+      "KLTs are generally faster to create and manage than ULTs because they avoid kernel involvement.",
+      "ULTs can take advantage of multiple processors on a multi-core system without specific kernel support."
+    ],
+    "correctAnswer": "Blocking a ULT always blocks the entire process, while blocking a KLT only blocks that specific thread.",
+    "explanation": "If a user-level thread makes a blocking system call, the entire process (and thus all other user-level threads within it) will block, as the kernel is unaware of the individual threads. Kernel-level threads are known to the kernel, so if one KLT blocks, the kernel can schedule another KLT from the same or a different process.",
+    "marks": 3
+  },
+  {
+    "text": "What is the state of a process after it has finished execution?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "Process Management",
+    "options": [
+      "Ready",
+      "Waiting",
+      "Terminated",
+      "Running"
+    ],
+    "correctAnswer": "Terminated",
+    "explanation": "A process enters the Terminated state after it has finished executing its last statement or when it is explicitly terminated by the operating system or another process.",
+    "marks": 1
+  },
+  {
+    "text": "A critical section refers to:",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "Process Management",
+    "options": [
+      "A section of code that is executed only once by a process.",
+      "A section of code that can be accessed by multiple processes concurrently without issues.",
+      "A section of code that accesses shared resources and must be executed by only one process at a time.",
+      "A section of code in the operating system kernel."
+    ],
+    "correctAnswer": "A section of code that accesses shared resources and must be executed by only one process at a time.",
+    "explanation": "A critical section is a segment of code where a process accesses shared resources (like shared variables or files). It's crucial to ensure that only one process or thread can execute its critical section at any given time to prevent race conditions and maintain data consistency.",
+    "marks": 2
+  },
+  {
+    "text": "What is the primary drawback of using busy-waiting for process synchronization?",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "Process Management",
+    "options": [
+      "It requires kernel-level intervention for every wait.",
+      "It consumes CPU cycles unnecessarily while a process waits for a condition to be met.",
+      "It can lead to deadlocks more easily than other methods.",
+      "It only works with non-preemptive scheduling algorithms."
+    ],
+    "correctAnswer": "It consumes CPU cycles unnecessarily while a process waits for a condition to be met.",
+    "explanation": "Busy-waiting (or spinlock) involves a process continuously checking a condition in a loop until it becomes true. This wastes CPU cycles that could be used by other processes, especially in a single-processor system where the waiting process prevents others from running.",
+    "marks": 3
+  },
+  {
+    "text": "Which of the following scheduling algorithms is considered non-preemptive?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "Process Management",
+    "options": [
+      "Round Robin",
+      "Shortest Remaining Time First (SRTF)",
+      "First-Come, First-Served (FCFS)",
+      "Priority Scheduling with preemption"
+    ],
+    "correctAnswer": "First-Come, First-Served (FCFS)",
+    "explanation": "First-Come, First-Served (FCFS) is a non-preemptive scheduling algorithm. Once a process gets the CPU, it runs to completion without interruption. Round Robin, SRTF, and preemptive Priority Scheduling are all preemptive.",
+    "marks": 2
+  },
+  {
+    "text": "Consider a system with three processes P1, P2, P3 and three resource types R1, R2, R3. If P1 needs R1 and R2, P2 needs R2 and R3, and P3 needs R3 and R1, and each resource type has only one instance, which of the following scenarios describes a potential deadlock state?",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "Process Management",
+    "options": [
+      "P1 holds R1, P2 holds R2, P3 holds R3. All are waiting for another resource.",
+      "P1 holds R1, P2 is waiting for R1, P3 holds R3.",
+      "P1 holds R1, P2 holds R3, P3 holds R2.",
+      "P1 holds R1, P2 holds R2, and P3 is currently running and needs no resources."
+    ],
+    "correctAnswer": "P1 holds R1, P2 holds R2, P3 holds R3. All are waiting for another resource.",
+    "explanation": "This scenario describes a circular wait condition combined with hold and wait. P1 holds R1 and waits for R2. P2 holds R2 and waits for R3. P3 holds R3 and waits for R1. Each process holds a resource needed by another process in the cycle, leading to a deadlock.",
+    "marks": 3
+  },
+  {
+    "text": "What is the primary role of a dispatcher in an operating system?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "Process Management",
+    "options": [
+      "To manage the main memory for processes.",
+      "To swap processes between main memory and secondary storage.",
+      "To give control of the CPU to the process selected by the short-term scheduler.",
+      "To create new processes and allocate initial resources."
+    ],
+    "correctAnswer": "To give control of the CPU to the process selected by the short-term scheduler.",
+    "explanation": "The dispatcher is the module that gives control of the CPU to the process selected by the short-term scheduler. It involves switching context, switching to user mode, and jumping to the proper location in the user program to restart that program.",
+    "marks": 2
+  },
+  {
+    "text": "Which of the following is a primary function of the operating system's memory management component?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "Memory Management",
+    "options": [
+      "Managing CPU scheduling",
+      "Allocating and deallocating memory space for processes",
+      "Handling file system operations",
+      "Controlling network communication"
+    ],
+    "correctAnswer": "Allocating and deallocating memory space for processes",
+    "explanation": "Memory management is responsible for keeping track of which parts of memory are in use and by whom, allocating space to processes when needed, and deallocating it when processes terminate or no longer require it.",
+    "marks": 1
+  },
+  {
+    "text": "What is the primary difference between a logical address and a physical address?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "Memory Management",
+    "options": [
+      "A logical address is generated by the CPU, while a physical address is seen by the memory unit.",
+      "A physical address is generated by the CPU, while a logical address is seen by the memory unit.",
+      "Logical addresses are only used in virtual memory systems, physical addresses are always real.",
+      "There is no difference; they are interchangeable terms."
+    ],
+    "correctAnswer": "A logical address is generated by the CPU, while a physical address is seen by the memory unit.",
+    "explanation": "A logical address (also known as a virtual address) is generated by the CPU. A physical address is the actual address seen by the memory controller, which accesses the physical memory location.",
+    "marks": 1
+  },
+  {
+    "text": "What type of fragmentation occurs when memory is allocated in fixed-size blocks, and a process requests a block smaller than the allocated block?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "Memory Management",
+    "options": [
+      "External fragmentation",
+      "Internal fragmentation",
+      "Temporal fragmentation",
+      "Spatial fragmentation"
+    ],
+    "correctAnswer": "Internal fragmentation",
+    "explanation": "Internal fragmentation occurs when a memory block is allocated to a process, but the process does not use the entire block, leaving a small amount of unused space within the allocated block. This is common in fixed partitioning schemes.",
+    "marks": 2
+  },
+  {
+    "text": "What is the purpose of 'swapping' in memory management?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "Memory Management",
+    "options": [
+      "To exchange data between CPU registers.",
+      "To move processes between main memory and secondary storage to improve memory utilization.",
+      "To replace old data with new data in a cache.",
+      "To reorganize memory blocks to eliminate external fragmentation."
+    ],
+    "correctAnswer": "To move processes between main memory and secondary storage to improve memory utilization.",
+    "explanation": "Swapping is a memory management technique where a process (or parts of it) is temporarily moved from main memory to secondary storage (like a hard disk) and then brought back into main memory when needed. This allows more processes to run than can fit in memory simultaneously.",
+    "marks": 2
+  },
+  {
+    "text": "Which memory management technique allows for non-contiguous allocation of a process's logical address space, dividing it into fixed-size blocks?",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "Memory Management",
+    "options": [
+      "Segmentation",
+      "Contiguous allocation",
+      "Paging",
+      "Swapping"
+    ],
+    "correctAnswer": "Paging",
+    "explanation": "Paging divides a process's logical address space into fixed-size blocks called pages, and physical memory into same-sized blocks called frames. This allows for non-contiguous allocation in physical memory without external fragmentation. Segmentation divides the logical address space into variable-sized segments based on logical units.",
+    "marks": 3
+  },
+  {
+    "text": "What is the main advantage of virtual memory?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "Memory Management",
+    "options": [
+      "It speeds up CPU clock cycles.",
+      "It allows programs to run even if their entire code and data are not in main memory.",
+      "It eliminates the need for secondary storage.",
+      "It reduces the power consumption of the system."
+    ],
+    "correctAnswer": "It allows programs to run even if their entire code and data are not in main memory.",
+    "explanation": "Virtual memory allows programs to execute even if only a portion of them is loaded into physical memory. This provides the illusion of a very large memory space to processes and allows more processes to run concurrently.",
+    "marks": 1
+  },
+  {
+    "text": "In a paging system, what is the primary role of the page table?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "Memory Management",
+    "options": [
+      "To store the physical address of the next instruction.",
+      "To map logical pages to physical frames.",
+      "To keep track of recently used pages for replacement.",
+      "To manage the allocation of CPU time to processes."
+    ],
+    "correctAnswer": "To map logical pages to physical frames.",
+    "explanation": "The page table is a data structure used by the virtual memory system to store the mapping between logical pages of a process and physical frames in main memory.",
+    "marks": 2
+  },
+  {
+    "text": "What is the purpose of a Translation Lookaside Buffer (TLB)?",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "Memory Management",
+    "options": [
+      "To store frequently accessed data for faster CPU access.",
+      "To cache recent page-to-frame translations to speed up address translation.",
+      "To manage the stack and heap of a process.",
+      "To convert binary data into human-readable format."
+    ],
+    "correctAnswer": "To cache recent page-to-frame translations to speed up address translation.",
+    "explanation": "The TLB is a special, small, hardware cache used to speed up the translation of virtual addresses to physical addresses. It stores recent mappings from the page table.",
+    "marks": 3
+  },
+  {
+    "text": "Which memory management technique loads pages into memory only when they are needed?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "Memory Management",
+    "options": [
+      "Pre-paging",
+      "Swapping",
+      "Demand paging",
+      "Segmentation with paging"
+    ],
+    "correctAnswer": "Demand paging",
+    "explanation": "Demand paging is a strategy where pages are brought into main memory only when a process attempts to access a location in that page that is not currently in memory (a page fault occurs).",
+    "marks": 2
+  },
+  {
+    "text": "What event occurs when a process tries to access a page that is not currently in physical memory?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "Memory Management",
+    "options": [
+      "Segmentation fault",
+      "Cache hit",
+      "Page fault",
+      "TLB miss"
+    ],
+    "correctAnswer": "Page fault",
+    "explanation": "A page fault is a type of interrupt that occurs when a program attempts to access a page of virtual memory that is not currently loaded into physical memory.",
+    "marks": 1
+  },
+  {
+    "text": "Among the page replacement algorithms, which one replaces the page that has not been used for the longest period of time?",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "Memory Management",
+    "options": [
+      "FIFO (First-In, First-Out)",
+      "Optimal",
+      "LFU (Least Frequently Used)",
+      "LRU (Least Recently Used)"
+    ],
+    "correctAnswer": "LRU (Least Recently Used)",
+    "explanation": "The LRU algorithm replaces the page that has not been referenced for the longest duration. It's an approximation of the optimal algorithm and aims to remove pages less likely to be used soon.",
+    "marks": 3
+  },
+  {
+    "text": "What is 'thrashing' in the context of virtual memory?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "Memory Management",
+    "options": [
+      "Excessive CPU utilization due to too many processes competing for the CPU.",
+      "A state where the system spends more time paging than executing processes, leading to low CPU utilization.",
+      "A situation where all processes are swapped out to disk simultaneously.",
+      "The process of quickly allocating and deallocating memory blocks."
+    ],
+    "correctAnswer": "A state where the system spends more time paging than executing processes, leading to low CPU utilization.",
+    "explanation": "Thrashing occurs when a system is excessively busy swapping pages between memory and disk, resulting in a significant decrease in overall system performance and low CPU utilization because the CPU is waiting for I/O. It typically happens when the sum of the working sets of active processes exceeds available physical memory.",
+    "marks": 2
+  },
+  {
+    "text": "How do memory management units (MMUs) typically provide memory protection?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "Memory Management",
+    "options": [
+      "By encrypting data stored in memory.",
+      "By using base and limit registers to ensure processes only access their assigned memory regions.",
+      "By requiring all memory accesses to pass through the kernel.",
+      "By periodically scanning memory for unauthorized writes."
+    ],
+    "correctAnswer": "By using base and limit registers to ensure processes only access their assigned memory regions.",
+    "explanation": "MMUs often use base and limit registers to define the legal address range for a process. Any attempt to access memory outside this range triggers an interrupt, preventing unauthorized access and protecting other processes or the OS.",
+    "marks": 2
+  },
+  {
+    "text": "What is the primary motivation for using multi-level page tables?",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "Memory Management",
+    "options": [
+      "To reduce the size of individual pages.",
+      "To speed up address translation by caching page table entries.",
+      "To reduce the amount of physical memory required to store the page table for a sparsely populated address space.",
+      "To support larger physical memory sizes."
+    ],
+    "correctAnswer": "To reduce the amount of physical memory required to store the page table for a sparsely populated address space.",
+    "explanation": "Multi-level page tables (or hierarchical paging) are used to manage large logical address spaces more efficiently. Instead of requiring a single, potentially very large page table for the entire virtual address space, it divides the page table itself into smaller, more manageable units, only allocating tables for address ranges that are actually in use, thus saving physical memory.",
+    "marks": 3
+  },
+  {
+    "text": "In memory management, what is shared memory primarily used for?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "Memory Management",
+    "options": [
+      "Storing operating system kernel code.",
+      "Enabling fast and efficient inter-process communication (IPC).",
+      "Backing up critical system data.",
+      "Providing a temporary storage area for CPU registers."
+    ],
+    "correctAnswer": "Enabling fast and efficient inter-process communication (IPC).",
+    "explanation": "Shared memory is a powerful and efficient form of inter-process communication (IPC) where multiple processes can access the same region of physical memory. This allows them to exchange data directly without the overhead of kernel involvement for each data transfer.",
+    "marks": 2
+  },
+  {
+    "text": "What is the process of moving all free memory blocks together to form one large block called?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "Memory Management",
+    "options": [
+      "Paging",
+      "Swapping",
+      "Segmentation",
+      "Compaction"
+    ],
+    "correctAnswer": "Compaction",
+    "explanation": "Compaction is a technique used in dynamic partitioning systems to combat external fragmentation. It involves relocating all loaded processes to one end of memory, thereby collecting all the free space into one contiguous block.",
+    "marks": 1
+  },
+  {
+    "text": "Which memory allocation strategy places a new process in the smallest hole that is large enough to hold it?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "Memory Management",
+    "options": [
+      "First-fit",
+      "Worst-fit",
+      "Best-fit",
+      "Next-fit"
+    ],
+    "correctAnswer": "Best-fit",
+    "explanation": "Best-fit allocates the smallest hole (free memory block) that is large enough to satisfy the request. This tends to leave very small, unusable holes.",
+    "marks": 2
+  },
+  {
+    "text": "Which page replacement algorithm is known to suffer from Belady's Anomaly?",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "Memory Management",
+    "options": [
+      "LRU (Least Recently Used)",
+      "Optimal",
+      "FIFO (First-In, First-Out)",
+      "LFU (Least Frequently Used)"
+    ],
+    "correctAnswer": "FIFO (First-In, First-Out)",
+    "explanation": "Belady's Anomaly is a phenomenon where increasing the number of available memory frames results in an increase in the number of page faults for certain page reference strings. FIFO is one algorithm known to exhibit this anomaly.",
+    "marks": 3
+  },
+  {
+    "text": "When can logical addresses be bound to physical addresses?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "Memory Management",
+    "options": [
+      "Only during compile time.",
+      "Only during load time.",
+      "Only during execution time.",
+      "At compile time, load time, or execution time."
+    ],
+    "correctAnswer": "At compile time, load time, or execution time.",
+    "explanation": "Address binding can occur at different stages: compile time (if the exact physical address is known), load time (if the starting physical address is known when the program is loaded), or execution time (most flexible, required for virtual memory and relocation).",
+    "marks": 1
+  },
+  {
+    "text": "What is a trade-off consideration when choosing a very large page size in a paging system?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "Memory Management",
+    "options": [
+      "Decreased internal fragmentation, but increased page table size.",
+      "Increased internal fragmentation, but decreased page table size.",
+      "Increased external fragmentation, but faster TLB lookups.",
+      "Decreased internal fragmentation, but slower page faults."
+    ],
+    "correctAnswer": "Increased internal fragmentation, but decreased page table size.",
+    "explanation": "A larger page size means fewer pages for the same logical address space, thus a smaller page table (fewer entries). However, it also increases the likelihood of internal fragmentation because the unused space within a partially filled page will be larger.",
+    "marks": 2
+  },
+  {
+    "text": "What is the primary purpose of a file system?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "File Systems",
+    "options": [
+      "To manage CPU scheduling for processes.",
+      "To organize and store data persistently on secondary storage.",
+      "To handle network communication protocols.",
+      "To manage RAM allocation for running applications."
+    ],
+    "correctAnswer": "To organize and store data persistently on secondary storage.",
+    "explanation": "A file system is responsible for organizing, storing, and retrieving files and directories on persistent storage devices like hard drives or SSDs. It provides a structured way to manage data.",
+    "marks": 1
+  },
+  {
+    "text": "Which of the following is an example of a basic file operation?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "File Systems",
+    "options": [
+      "Process creation",
+      "Memory page swapping",
+      "File creation",
+      "Interrupt handling"
+    ],
+    "correctAnswer": "File creation",
+    "explanation": "File creation is a fundamental operation provided by a file system, allowing users or applications to create new files on storage. The other options relate to process management, memory management, and CPU operations.",
+    "marks": 1
+  },
+  {
+    "text": "Which file allocation method is susceptible to external fragmentation?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "File Systems",
+    "options": [
+      "Linked allocation",
+      "Indexed allocation",
+      "Contiguous allocation",
+      "File Table allocation"
+    ],
+    "correctAnswer": "Contiguous allocation",
+    "explanation": "Contiguous allocation stores each file as a contiguous block of disk blocks. Over time, as files are created and deleted, this can lead to small, unusable free spaces scattered across the disk, known as external fragmentation. Linked and Indexed allocation avoid external fragmentation by not requiring contiguous blocks.",
+    "marks": 2
+  },
+  {
+    "text": "In Unix-like file systems, what structure primarily stores metadata about a file, such as its size, permissions, and location of data blocks, but not its name?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "File Systems",
+    "options": [
+      "Directory entry",
+      "Superblock",
+      "Inode",
+      "Boot block"
+    ],
+    "correctAnswer": "Inode",
+    "explanation": "An inode (index node) is a data structure in Unix-like file systems that describes a file-system object such as a file or a directory. It stores the metadata, including permissions, owner, group, size, creation/modification times, and pointers to data blocks. The filename itself is stored in the directory entry that points to the inode.",
+    "marks": 1
+  },
+  {
+    "text": "What is the main disadvantage of a single-level directory structure?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "File Systems",
+    "options": [
+      "Slow access times for large files.",
+      "Difficulty in sharing files among users.",
+      "Naming conflicts when multiple users create files.",
+      "Inefficient disk space utilization."
+    ],
+    "correctAnswer": "Naming conflicts when multiple users create files.",
+    "explanation": "A single-level directory structure places all files in one directory, making it difficult to find files and leading to naming conflicts if multiple users try to create files with the same name. It lacks organization and scalability.",
+    "marks": 2
+  },
+  {
+    "text": "Consider an indexed allocation scheme with 4KB block size and 4-byte block addresses. If an inode has 12 direct pointers, one single indirect pointer, one double indirect pointer, and one triple indirect pointer, what is the maximum file size supported by this scheme?",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "File Systems",
+    "options": [
+      "4TB",
+      "4TB + 4GB + 4MB + 48KB",
+      "16TB",
+      "Approximately 2TB"
+    ],
+    "correctAnswer": "4TB + 4GB + 4MB + 48KB",
+    "explanation": "Given block size = 4KB (2^12 bytes) and 4-byte block addresses.\nNumber of pointers per block = 4KB / 4 bytes = 1024 (2^10) pointers.\n1. 12 Direct pointers: 12 * 4KB = 48KB.\n2. Single indirect pointer: 1 * 1024 * 4KB = 4MB (2^22 bytes).\n3. Double indirect pointer: 1 * 1024 * 1024 * 4KB = 4GB (2^32 bytes).\n4. Triple indirect pointer: 1 * 1024 * 1024 * 1024 * 4KB = 4TB (2^42 bytes).\nTotal maximum file size = 4TB + 4GB + 4MB + 48KB.",
+    "marks": 3
+  },
+  {
+    "text": "What is the primary benefit of a journaling file system like ext3 or NTFS?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "File Systems",
+    "options": [
+      "Faster file read speeds.",
+      "Reduced external fragmentation.",
+      "Improved data integrity and faster recovery after a crash.",
+      "Support for extremely large file sizes."
+    ],
+    "correctAnswer": "Improved data integrity and faster recovery after a crash.",
+    "explanation": "Journaling file systems record metadata changes (and sometimes data changes) in a journal before committing them to the main file system. This allows for much faster recovery after a system crash, as the system can simply replay the journal entries to restore consistency, rather than performing a full file system check (fsck).",
+    "marks": 2
+  },
+  {
+    "text": "Which type of file access method is best suited for files that are typically read or written from the beginning to the end, such as text files?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "File Systems",
+    "options": [
+      "Direct access",
+      "Indexed access",
+      "Sequential access",
+      "Random access"
+    ],
+    "correctAnswer": "Sequential access",
+    "explanation": "Sequential access is ideal for files processed in order, from beginning to end. Data is accessed byte by byte or record by record, in sequence. Text files, log files, or audio/video streams are common examples.",
+    "marks": 1
+  },
+  {
+    "text": "Which of the following is typically stored in the super block of a file system?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "File Systems",
+    "options": [
+      "The contents of specific user files.",
+      "Pointers to the first data block of each file.",
+      "Information about the file system itself, such as total blocks, free blocks, and inode count.",
+      "The access control list for a specific directory."
+    ],
+    "correctAnswer": "Information about the file system itself, such as total blocks, free blocks, and inode count.",
+    "explanation": "The super block (or master file table in NTFS) contains crucial metadata about the entire file system, including its size, block size, number of free blocks, number of free inodes, and pointers to other key structures like the inode table. It's essential for mounting and managing the file system.",
+    "marks": 2
+  },
+  {
+    "text": "Explain the concept of 'soft links' (symbolic links) versus 'hard links' in Unix-like file systems.",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "File Systems",
+    "options": [
+      "Soft links point to a file's data block directly, while hard links point to a file's inode.",
+      "Soft links can span file systems and point to directories, while hard links cannot span file systems and only point to files.",
+      "Soft links are deleted when the original file is deleted, while hard links remain and keep the file content accessible.",
+      "Hard links create a new copy of the file's data, while soft links merely create a shortcut."
+    ],
+    "correctAnswer": "Soft links can span file systems and point to directories, while hard links cannot span file systems and only point to files.",
+    "explanation": "A hard link is essentially another directory entry that points to the same inode as the original file. This means they share the same data and metadata. Hard links cannot span file systems and can only point to files (not directories). A soft link (or symbolic link) is a special type of file that contains a path to another file or directory. It can span file systems and point to directories. If the original file pointed to by a soft link is deleted, the soft link becomes a 'broken' link.",
+    "marks": 3
+  },
+  {
+    "text": "What is 'internal fragmentation' in the context of file systems?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "File Systems",
+    "options": [
+      "Wasted space due to files not being stored contiguously.",
+      "Wasted space within the last allocated block of a file because the file size is not a multiple of the block size.",
+      "Wasted space when a file system's metadata takes up too much room.",
+      "Wasted space caused by deleted files leaving gaps in the disk."
+    ],
+    "correctAnswer": "Wasted space within the last allocated block of a file because the file size is not a multiple of the block size.",
+    "explanation": "Internal fragmentation occurs when memory or disk space is allocated in fixed-size blocks (e.g., 4KB blocks), but a file's actual size is not a multiple of the block size. The remaining space in the last block allocated to the file goes unused, leading to wasted space within that block.",
+    "marks": 2
+  },
+  {
+    "text": "Which of the following describes the 'path' to a file in a hierarchical directory system?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "File Systems",
+    "options": [
+      "The unique identifier assigned to the file's inode.",
+      "The physical address of the first data block of the file.",
+      "A sequence of directory names that leads from the root or current directory to the file.",
+      "The set of permissions associated with the file."
+    ],
+    "correctAnswer": "A sequence of directory names that leads from the root or current directory to the file.",
+    "explanation": "The path to a file is a string of characters that identifies the location of a file within a directory structure. It specifies the unique sequence of directories that must be traversed to reach the file, starting from either the root directory (absolute path) or the current working directory (relative path).",
+    "marks": 1
+  },
+  {
+    "text": "In the context of free space management, what is the main advantage of using a 'bit vector' (bit map) over a 'linked list of free blocks'?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "File Systems",
+    "options": [
+      "Bit vector is more space-efficient for very fragmented disks.",
+      "Bit vector allows for easier grouping of free blocks for contiguous allocation.",
+      "Bit vector is less susceptible to corruption.",
+      "Bit vector supports faster traversal for finding a specific file."
+    ],
+    "correctAnswer": "Bit vector allows for easier grouping of free blocks for contiguous allocation.",
+    "explanation": "A bit vector uses a bit for each disk block, where 0 means free and 1 means occupied. This allows for very efficient searching for a contiguous block of N free blocks, as the system can scan for N consecutive 0s. A linked list of free blocks requires traversing the list, which can be slower for finding contiguous chunks.",
+    "marks": 2
+  },
+  {
+    "text": "What is the primary challenge in implementing an acyclic-graph directory structure, and how is it typically addressed?",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "File Systems",
+    "options": [
+      "It makes file access slower due to complex traversal; addressed by caching directory entries.",
+      "It leads to excessive internal fragmentation; addressed by using smaller block sizes.",
+      "It creates dangling pointers when files are deleted; addressed by using a reference count or garbage collection.",
+      "It limits the number of files a user can create; addressed by allowing larger inode tables."
+    ],
+    "correctAnswer": "It creates dangling pointers when files are deleted; addressed by using a reference count or garbage collection.",
+    "explanation": "Acyclic-graph directory structures allow files or subdirectories to be shared by being referenced from multiple parent directories. The challenge arises when a file with multiple links is deleted; if not handled carefully, deleting one link could leave other links pointing to non-existent data (dangling pointers). This is typically addressed by maintaining a reference count (link count) for each file/directory, deleting the actual data only when the count drops to zero, or by using a garbage collection mechanism.",
+    "marks": 3
+  },
+  {
+    "text": "How does 'caching' typically improve file system performance?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "File Systems",
+    "options": [
+      "By permanently storing frequently accessed files in RAM.",
+      "By organizing disk blocks more efficiently to reduce seek time.",
+      "By storing frequently accessed disk blocks (data and metadata) in faster memory (RAM) to avoid repeated disk I/O.",
+      "By compressing files before writing them to disk."
+    ],
+    "correctAnswer": "By storing frequently accessed disk blocks (data and metadata) in faster memory (RAM) to avoid repeated disk I/O.",
+    "explanation": "Caching improves file system performance by temporarily storing copies of frequently accessed data or metadata blocks from slower storage (disk) into faster memory (RAM). When a request for that data comes again, it can be served from the cache much quicker than reading from the disk, reducing I/O latency.",
+    "marks": 2
+  },
+  {
+    "text": "In the context of file system recovery, what is the difference between 'metadata journaling' and 'full data journaling'?",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "File Systems",
+    "options": [
+      "Metadata journaling logs only file access times, while full data journaling logs all file operations.",
+      "Metadata journaling logs changes only to directory structures and file attributes, while full data journaling also logs changes to the actual file content.",
+      "Metadata journaling is slower but more secure, while full data journaling is faster but less secure.",
+      "Metadata journaling uses a separate journal for each file, while full data journaling uses a single system-wide journal."
+    ],
+    "correctAnswer": "Metadata journaling logs changes only to directory structures and file attributes, while full data journaling also logs changes to the actual file content.",
+    "explanation": "Metadata journaling (e.g., ext3 in 'ordered' mode) logs only changes to the file system's metadata (inodes, directory entries, super block). This ensures file system consistency but doesn't guarantee the integrity of file data itself if a crash occurs during a write. Full data journaling (e.g., ext3 in 'journal' mode) logs both metadata and actual file data changes, offering the highest level of data integrity at the cost of increased I/O overhead.",
+    "marks": 3
+  },
+  {
+    "text": "What does a 'File Control Block' (FCB) typically contain?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "File Systems",
+    "options": [
+      "The program code of the application accessing the file.",
+      "The network address of the file server.",
+      "File-specific information such as permissions, owner, size, and data block locations.",
+      "A list of all users currently logged into the system."
+    ],
+    "correctAnswer": "File-specific information such as permissions, owner, size, and data block locations.",
+    "explanation": "A File Control Block (FCB) is a data structure maintained by the operating system for each file. It contains important information about the file, including its permissions, owner, size, timestamps (creation, modification, access), and pointers to the disk blocks where the file's data is stored.",
+    "marks": 2
+  },
+  {
+    "text": "Which of the following is NOT a common file attribute managed by a file system?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "File Systems",
+    "options": [
+      "File type",
+      "File size",
+      "CPU clock speed",
+      "Last modification date"
+    ],
+    "correctAnswer": "CPU clock speed",
+    "explanation": "File attributes managed by a file system typically include properties directly related to the file, such as its type, size, permissions, owner, and various timestamps (creation, last access, last modification). CPU clock speed is a hardware characteristic and not a file attribute.",
+    "marks": 1
+  },
+  {
+    "text": "How does 'linked allocation' solve the problem of external fragmentation found in contiguous allocation?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "File Systems",
+    "options": [
+      "By storing files in a single, large contiguous block.",
+      "By maintaining a separate index block for each file.",
+      "By linking together non-contiguous disk blocks, with each block containing a pointer to the next block in the file.",
+      "By dividing the disk into fixed-size partitions."
+    ],
+    "correctAnswer": "By linking together non-contiguous disk blocks, with each block containing a pointer to the next block in the file.",
+    "explanation": "Linked allocation overcomes external fragmentation by allowing a file's data blocks to be scattered non-contiguously across the disk. Each disk block in the file contains a pointer to the next block, forming a chain. This means only a small amount of space is needed for the pointers, and any free block can be used, regardless of its location.",
+    "marks": 2
+  },
+  {
+    "text": "Consider a file system with 512-byte blocks and a directory entry size of 64 bytes. If a directory contains 200 files, how many disk blocks would be required to store this directory's entries (assuming no special indexing or optimization for directory blocks)?",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "File Systems",
+    "options": [
+      "10 blocks",
+      "25 blocks",
+      "40 blocks",
+      "50 blocks"
+    ],
+    "correctAnswer": "25 blocks",
+    "explanation": "Total size needed for directory entries = 200 files * 64 bytes/file = 12800 bytes. Given block size = 512 bytes. Number of blocks required = Ceiling(12800 bytes / 512 bytes/block) = Ceiling(25) = 25 blocks.",
+    "marks": 3
+  },
+  {
+    "text": "What is the primary function of the 'root directory' in a hierarchical file system?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "File Systems",
+    "options": [
+      "To store all executable program files.",
+      "To serve as the top-most directory from which all other directories and files branch out.",
+      "To manage all user accounts and permissions.",
+      "To cache frequently accessed file data."
+    ],
+    "correctAnswer": "To serve as the top-most directory from which all other directories and files branch out.",
+    "explanation": "The root directory is the base of the entire file system hierarchy. All other directories and files are contained within, or branch off from, the root directory. It provides the starting point for all absolute paths.",
+    "marks": 2
+  },
+  {
+    "text": "What is a race condition in concurrent programming?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "Concurrency and Deadlocks",
+    "options": [
+      "A situation where multiple threads try to access a shared resource simultaneously, leading to unpredictable results.",
+      "A condition where a process never gets scheduled to run by the CPU.",
+      "An error that occurs when two processes deadlock.",
+      "A type of software bug that only occurs in single-threaded applications."
+    ],
+    "correctAnswer": "A situation where multiple threads try to access a shared resource simultaneously, leading to unpredictable results.",
+    "explanation": "A race condition occurs when two or more threads or processes access a shared resource concurrently and attempt to modify it, leading to unpredictable results depending on the interleaving of operations. Proper synchronization mechanisms are needed to prevent race conditions.",
+    "marks": 1
+  },
+  {
+    "text": "Which of the following is NOT a fundamental requirement for a correct solution to the critical section problem?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "Concurrency and Deadlocks",
+    "options": [
+      "Mutual Exclusion",
+      "Progress",
+      "Bounded Waiting",
+      "Preemption"
+    ],
+    "correctAnswer": "Preemption",
+    "explanation": "The three fundamental requirements for a correct solution to the critical section problem are Mutual Exclusion (only one process in the critical section at a time), Progress (if no process is in critical section and some wish to enter, only those not in their remainder section can participate in deciding who enters next, and this selection cannot be postponed indefinitely), and Bounded Waiting (there is a limit on the number of times other processes are allowed to enter their critical sections after a process has made a request to enter its critical section and before that request is granted). Preemption is a scheduling technique, not a requirement for critical section solutions.",
+    "marks": 2
+  },
+  {
+    "text": "What is the primary purpose of a binary semaphore?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "Concurrency and Deadlocks",
+    "options": [
+      "To count the number of available resources.",
+      "To enforce mutual exclusion.",
+      "To allow multiple processes to enter a critical section simultaneously.",
+      "To facilitate message passing between processes."
+    ],
+    "correctAnswer": "To enforce mutual exclusion.",
+    "explanation": "A binary semaphore, often used as a mutex lock, has a value of 0 or 1 and is primarily used to provide mutual exclusion to a critical section, ensuring only one process can access a shared resource at a time. Counting semaphores are used for counting multiple instances of a resource.",
+    "marks": 1
+  },
+  {
+    "text": "In a monitor, what is the purpose of a condition variable's `wait()` operation?",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "Concurrency and Deadlocks",
+    "options": [
+      "It releases the monitor's lock, places the calling process into a waiting queue for that condition, and blocks the process.",
+      "It decrements the condition variable's count and immediately signals another waiting process.",
+      "It increments the condition variable's count, allowing another process to acquire the monitor lock.",
+      "It allows the process to continue execution within the monitor while blocking other processes."
+    ],
+    "correctAnswer": "It releases the monitor's lock, places the calling process into a waiting queue for that condition, and blocks the process.",
+    "explanation": "When a process calls `wait()` on a condition variable within a monitor, it atomically releases the monitor lock, places itself on a waiting queue associated with that condition variable, and blocks until another process signals that condition. This allows other processes to enter the monitor.",
+    "marks": 3
+  },
+  {
+    "text": "Which of the following is NOT one of the four necessary conditions for a deadlock to occur?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "Concurrency and Deadlocks",
+    "options": [
+      "Mutual Exclusion",
+      "Hold and Wait",
+      "Preemption",
+      "Circular Wait"
+    ],
+    "correctAnswer": "Preemption",
+    "explanation": "The four necessary conditions for a deadlock are Mutual Exclusion, Hold and Wait, No Preemption, and Circular Wait. Preemption (the ability to forcibly take resources away) is typically a method to prevent or resolve deadlocks, not a condition for their occurrence.",
+    "marks": 2
+  },
+  {
+    "text": "What is a deadlock in an operating system context?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "Concurrency and Deadlocks",
+    "options": [
+      "A state where two or more processes are blocked indefinitely, each waiting for a resource held by another process in the same set.",
+      "A process repeatedly attempting an operation that fails.",
+      "An error where a program tries to access memory it doesn't own.",
+      "A condition where a process uses too much CPU time."
+    ],
+    "correctAnswer": "A state where two or more processes are blocked indefinitely, each waiting for a resource held by another process in the same set.",
+    "explanation": "A deadlock occurs when a set of processes are blocked indefinitely, each holding a resource and waiting to acquire a resource held by another process in the set, forming a circular chain of dependencies.",
+    "marks": 1
+  },
+  {
+    "text": "The Banker's Algorithm is a classic example of what type of deadlock handling strategy?",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "Concurrency and Deadlocks",
+    "options": [
+      "Deadlock Prevention",
+      "Deadlock Avoidance",
+      "Deadlock Detection",
+      "Deadlock Recovery"
+    ],
+    "correctAnswer": "Deadlock Avoidance",
+    "explanation": "The Banker's Algorithm is a deadlock avoidance algorithm. It dynamically examines the state of the system before allocating resources to ensure that there is always a safe sequence of resource allocation, thereby preventing the system from entering an unsafe state that could lead to deadlock.",
+    "marks": 3
+  },
+  {
+    "text": "How can the 'Hold and Wait' condition for deadlock be prevented?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "Concurrency and Deadlocks",
+    "options": [
+      "By ensuring processes request all their required resources at once and are granted them before execution begins.",
+      "By allowing processes to hold multiple resources and wait for others.",
+      "By prioritizing resource allocation based on process ID.",
+      "By allowing resources to be preempted from a process if needed."
+    ],
+    "correctAnswer": "By ensuring processes request all their required resources at once and are granted them before execution begins.",
+    "explanation": "To prevent 'Hold and Wait,' processes can be required to request all their necessary resources at the beginning of their execution and not proceed until all are available. Another strategy is to require a process to release all resources it currently holds before requesting additional resources.",
+    "marks": 2
+  },
+  {
+    "text": "What is starvation in an operating system?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "Concurrency and Deadlocks",
+    "options": [
+      "A situation where a process is blocked indefinitely and never gets to execute or acquire resources.",
+      "A process consuming too many system resources.",
+      "A process continuously getting preempted by higher priority processes.",
+      "An error where a process attempts to access an invalid memory address."
+    ],
+    "correctAnswer": "A situation where a process is blocked indefinitely and never gets to execute or acquire resources.",
+    "explanation": "Starvation occurs when a process is repeatedly denied access to a resource or CPU time, despite being able to proceed, often due to an unfair scheduling policy or continuous preference given to other processes, leading to indefinite postponement.",
+    "marks": 1
+  },
+  {
+    "text": "Which statement best describes a livelock?",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "Concurrency and Deadlocks",
+    "options": [
+      "Processes repeatedly change their state in response to other processes, without making any progress.",
+      "Processes are stuck in an infinite loop within their critical section.",
+      "Processes are blocked indefinitely, each waiting for a resource held by another.",
+      "A process is repeatedly delayed but eventually makes progress."
+    ],
+    "correctAnswer": "Processes repeatedly change their state in response to other processes, without making any progress.",
+    "explanation": "Livelock is similar to deadlock in that no progress is made, but processes are not blocked. Instead, they continually change their state in response to each other, preventing actual work from being done (e.g., two people politely stepping aside for each other, resulting in both blocking the path indefinitely).",
+    "marks": 3
+  },
+  {
+    "text": "The Dining Philosophers Problem is a classic synchronization problem that illustrates the potential for what two issues?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "Concurrency and Deadlocks",
+    "options": [
+      "Deadlock and starvation.",
+      "Race conditions and memory leaks.",
+      "Pipelining and caching.",
+      "Context switching and thread priority inversion."
+    ],
+    "correctAnswer": "Deadlock and starvation.",
+    "explanation": "The Dining Philosophers Problem is famously used to illustrate potential issues of deadlock (if all philosophers pick up their left fork simultaneously and wait for the right) and starvation (if some philosophers are continuously unable to acquire both forks due to an unfair scheduling or acquisition pattern).",
+    "marks": 2
+  },
+  {
+    "text": "A section of code that accesses shared resources and must be executed by only one process at a time is known as a:",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "Concurrency and Deadlocks",
+    "options": [
+      "Atomic instruction",
+      "Critical section",
+      "Remainder section",
+      "Mutex"
+    ],
+    "correctAnswer": "Critical section",
+    "explanation": "A critical section is a segment of code where shared resources are accessed. To prevent race conditions, only one process is allowed to execute its critical section at any given time, enforced by mutual exclusion.",
+    "marks": 1
+  },
+  {
+    "text": "In the Producer-Consumer problem, a shared buffer is used. Which synchronization primitive is typically used to signal that the buffer is full or empty?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "Concurrency and Deadlocks",
+    "options": [
+      "Mutex locks",
+      "Binary semaphores",
+      "Counting semaphores",
+      "Read-write locks"
+    ],
+    "correctAnswer": "Counting semaphores",
+    "explanation": "Counting semaphores are typically used to keep track of the number of empty and full slots in the buffer. An 'empty' semaphore counts available slots, and a 'full' semaphore counts occupied slots. Mutexes are used for mutual exclusion to access the buffer itself.",
+    "marks": 2
+  },
+  {
+    "text": "Which of the following is a common method for deadlock recovery?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "Concurrency and Deadlocks",
+    "options": [
+      "Allowing preemption of resources from processes.",
+      "Ignoring the deadlock and letting the system resolve itself.",
+      "Providing significantly more resources to the system.",
+      "Decreasing the number of processes in the system indefinitely."
+    ],
+    "correctAnswer": "Allowing preemption of resources from processes.",
+    "explanation": "Deadlock recovery typically involves either process termination (aborting one or more deadlocked processes) or resource preemption (taking resources from one process and giving them to another until the deadlock is broken).",
+    "marks": 1
+  },
+  {
+    "text": "To break the 'No Preemption' condition for deadlock, what must the system be capable of doing?",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "Concurrency and Deadlocks",
+    "options": [
+      "Forcibly taking resources from a process holding them and allocating them to another.",
+      "Allowing processes to voluntarily release resources.",
+      "Ensuring processes request all resources at once.",
+      "Preventing circular wait by ordering resource acquisition."
+    ],
+    "correctAnswer": "Forcibly taking resources from a process holding them and allocating them to another.",
+    "explanation": "The 'No Preemption' condition states that a resource cannot be forcibly taken from a process holding it. To break this condition, the system must be able to preempt resources, meaning it can take resources away from processes and allocate them to others to resolve a deadlock.",
+    "marks": 3
+  },
+  {
+    "text": "What is a key difference between a mutex and a binary semaphore when used for mutual exclusion?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "Concurrency and Deadlocks",
+    "options": [
+      "A mutex typically has an ownership concept (only the locker can unlock), while a binary semaphore does not.",
+      "A mutex can count resources, while a binary semaphore cannot.",
+      "A mutex is used for inter-process communication, while a binary semaphore is for intra-process synchronization.",
+      "Mutexes support nested locking, while binary semaphores do not."
+    ],
+    "correctAnswer": "A mutex typically has an ownership concept (only the locker can unlock), while a binary semaphore does not.",
+    "explanation": "A key distinction is ownership. A mutex is a locking mechanism where only the process that locked the mutex is supposed to unlock it. A binary semaphore, while it can enforce mutual exclusion, doesn't inherently have this ownership concept; any process can perform a `signal()` (V operation) on it, which can lead to issues if not used carefully for mutual exclusion.",
+    "marks": 2
+  },
+  {
+    "text": "An operation that is indivisible and uninterruptible is called an:",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "Concurrency and Deadlocks",
+    "options": [
+      "Volatile operation",
+      "Concurrent operation",
+      "Atomic operation",
+      "Synchronized operation"
+    ],
+    "correctAnswer": "Atomic operation",
+    "explanation": "An atomic operation is one that is guaranteed to complete in its entirety without interruption or interference from other operations, ensuring data consistency in concurrent environments.",
+    "marks": 1
+  },
+  {
+    "text": "In deadlock avoidance, what is the primary goal before allocating resources?",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "Concurrency and Deadlocks",
+    "options": [
+      "To ensure all processes declare their maximum resource needs in advance.",
+      "To preempt resources from processes if a deadlock is detected.",
+      "To abort processes that are causing a potential deadlock.",
+      "To ensure that the system remains in an unsafe state."
+    ],
+    "correctAnswer": "To ensure all processes declare their maximum resource needs in advance.",
+    "explanation": "Deadlock avoidance algorithms, like the Banker's Algorithm, require processes to declare their maximum resource needs beforehand. The system then makes allocation decisions only if it can guarantee that a safe sequence exists, preventing the system from entering an unsafe state.",
+    "marks": 3
+  },
+  {
+    "text": "Which deadlock prevention strategy directly addresses the 'Circular Wait' condition?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "Concurrency and Deadlocks",
+    "options": [
+      "Requiring processes to request all resources at once.",
+      "Ordering all resource types and requiring processes to request resources in increasing order of enumeration.",
+      "Allowing resources to be preempted from a process.",
+      "Limiting the number of processes that can enter a critical section."
+    ],
+    "correctAnswer": "Ordering all resource types and requiring processes to request resources in increasing order of enumeration.",
+    "explanation": "The 'Circular Wait' condition can be prevented by imposing a total ordering of all resource types. Processes must request resources in an increasing order of enumeration. This ensures that a circular chain of waiting processes cannot form.",
+    "marks": 2
+  },
+  {
+    "text": "What is a significant disadvantage of using busy waiting (spinlocks) for mutual exclusion in a single-processor system?",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "Concurrency and Deadlocks",
+    "options": [
+      "It wastes CPU cycles while the process is waiting, without yielding the CPU.",
+      "It requires complex kernel support.",
+      "It leads to increased context switching overhead.",
+      "It introduces priority inversion issues."
+    ],
+    "correctAnswer": "It wastes CPU cycles while the process is waiting, without yielding the CPU.",
+    "explanation": "Busy waiting, or spinlocking, involves a process repeatedly checking a condition in a loop while holding the CPU. In a single-processor system, this is highly inefficient because the waiting process consumes valuable CPU cycles without allowing other processes (potentially the one that would release the resource) to run, leading to wasted CPU time.",
+    "marks": 3
+  },
+  {
+    "text": "What is the primary function of an I/O controller in an operating system?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "I/O Systems",
+    "options": [
+      "To manage CPU scheduling",
+      "To translate logical requests into device-specific commands",
+      "To allocate memory to processes",
+      "To handle network packet routing",
+      "To manage CPU scheduling"
+    ],
+    "correctAnswer": "To translate logical requests into device-specific commands",
+    "explanation": "An I/O controller, also known as a device controller, is responsible for interfacing between the CPU and I/O devices. It translates high-level commands from the CPU into low-level device-specific signals and vice-versa, managing the device's operations.",
+    "marks": 1
+  },
+  {
+    "text": "Which of the following techniques allows the CPU to continue executing other tasks while an I/O operation is in progress?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "I/O Systems",
+    "options": [
+      "Polling",
+      "Programmed I/O",
+      "Direct Memory Access (DMA)",
+      "Busy waiting"
+    ],
+    "correctAnswer": "Direct Memory Access (DMA)",
+    "explanation": "DMA (Direct Memory Access) allows I/O devices to transfer data directly to and from main memory without involving the CPU. This frees the CPU to perform other tasks while the I/O transfer occurs, significantly improving system throughput. Polling and Programmed I/O require CPU intervention for each data transfer, and busy waiting is an inefficient form of polling.",
+    "marks": 2
+  },
+  {
+    "text": "What is the role of a device driver in an operating system's I/O subsystem?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "I/O Systems",
+    "options": [
+      "To schedule CPU processes",
+      "To manage the file system",
+      "To provide an interface between the operating system and hardware devices",
+      "To perform memory allocation"
+    ],
+    "correctAnswer": "To provide an interface between the operating system and hardware devices",
+    "explanation": "A device driver is a software component that enables the operating system to interact with specific hardware devices. It translates generic I/O requests from the OS into device-specific commands and handles responses from the hardware.",
+    "marks": 1
+  },
+  {
+    "text": "When an I/O operation completes, how does the device controller typically notify the CPU?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "I/O Systems",
+    "options": [
+      "By sending a regular data packet",
+      "By continuously polling the CPU's status register",
+      "By generating an interrupt",
+      "By sending a direct message to all running processes"
+    ],
+    "correctAnswer": "By generating an interrupt",
+    "explanation": "Device controllers typically use interrupts to signal the CPU upon completion of an I/O operation or if an error occurs. This allows the CPU to continue other work without constantly checking the device's status (polling).",
+    "marks": 2
+  },
+  {
+    "text": "Consider an I/O system where a slow device needs to transfer a large amount of data. Which I/O method would likely lead to the poorest CPU utilization if not handled properly?",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "I/O Systems",
+    "options": [
+      "DMA",
+      "Interrupt-driven I/O",
+      "Programmed I/O with busy waiting",
+      "Asynchronous I/O"
+    ],
+    "correctAnswer": "Programmed I/O with busy waiting",
+    "explanation": "Programmed I/O with busy waiting is the least efficient for slow devices and large data transfers because the CPU repeatedly checks the device's status register until the operation completes. During this 'busy waiting' period, the CPU cannot perform any other useful work, leading to very poor CPU utilization.",
+    "marks": 3
+  },
+  {
+    "text": "What is the purpose of buffering in an I/O system?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "I/O Systems",
+    "options": [
+      "To speed up the CPU clock cycle",
+      "To store frequently accessed data for faster retrieval by the CPU",
+      "To temporarily hold data during transfer between devices with different speeds or access patterns",
+      "To compress data before it is written to disk"
+    ],
+    "correctAnswer": "To temporarily hold data during transfer between devices with different speeds or access patterns",
+    "explanation": "Buffering involves using a temporary storage area (buffer) to hold data during transfer. This helps to match the speeds of different devices, consolidate small transfers into larger ones, and allow the producer and consumer of data to operate at their own pace.",
+    "marks": 2
+  },
+  {
+    "text": "Which component is responsible for abstracting the complexities of hardware devices from the applications and the rest of the operating system?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "I/O Systems",
+    "options": [
+      "The kernel's memory manager",
+      "The scheduler",
+      "The I/O subsystem and device drivers",
+      "The CPU's arithmetic logic unit (ALU)"
+    ],
+    "correctAnswer": "The I/O subsystem and device drivers",
+    "explanation": "The I/O subsystem, specifically through device drivers, provides a consistent, high-level interface to applications and other parts of the kernel, abstracting away the low-level, device-specific details of I/O hardware.",
+    "marks": 1
+  },
+  {
+    "text": "A user process requests a read operation from a disk. The request goes through several layers of the I/O subsystem. Which order correctly represents the flow?",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "I/O Systems",
+    "options": [
+      "Application -> Device Driver -> I/O Controller -> Kernel I/O Subsystem",
+      "Application -> Kernel I/O Subsystem -> Device Driver -> I/O Controller",
+      "Kernel I/O Subsystem -> Application -> Device Driver -> I/O Controller",
+      "I/O Controller -> Device Driver -> Kernel I/O Subsystem -> Application"
+    ],
+    "correctAnswer": "Application -> Kernel I/O Subsystem -> Device Driver -> I/O Controller",
+    "explanation": "The correct flow is: The application makes a system call (e.g., read) which is handled by the Kernel I/O Subsystem. The kernel then invokes the appropriate Device Driver, which translates the request into hardware-specific commands for the I/O Controller, which finally interacts with the physical device.",
+    "marks": 3
+  },
+  {
+    "text": "What is the primary benefit of using asynchronous I/O?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "I/O Systems",
+    "options": [
+      "It guarantees faster device response times for all operations.",
+      "It eliminates the need for device drivers.",
+      "It allows the calling process to continue execution without waiting for the I/O operation to complete.",
+      "It reduces the complexity of I/O controllers."
+    ],
+    "correctAnswer": "It allows the calling process to continue execution without waiting for the I/O operation to complete.",
+    "explanation": "Asynchronous I/O allows a process to initiate an I/O operation and then immediately continue with other tasks. The process is notified (e.g., via interrupt or callback) when the I/O operation has completed, rather than blocking and waiting.",
+    "marks": 2
+  },
+  {
+    "text": "Which of the following I/O devices is typically block-oriented?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "I/O Systems",
+    "options": [
+      "Keyboard",
+      "Mouse",
+      "Hard disk drive",
+      "Serial port"
+    ],
+    "correctAnswer": "Hard disk drive",
+    "explanation": "Block-oriented devices store and transfer data in fixed-size blocks (e.g., sectors on a hard disk). Hard disk drives are prime examples of block-oriented devices. Keyboards, mice, and serial ports are typically character-oriented.",
+    "marks": 1
+  },
+  {
+    "text": "Spooling is a technique used in I/O systems primarily for which purpose?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "I/O Systems",
+    "options": [
+      "To increase the speed of the CPU",
+      "To manage virtual memory pages",
+      "To hold jobs for a device, such as a printer, that cannot keep up with the speed of data generation",
+      "To encrypt I/O data transfers"
+    ],
+    "correctAnswer": "To hold jobs for a device, such as a printer, that cannot keep up with the speed of data generation",
+    "explanation": "Spooling (Simultaneous Peripheral Operations On-Line) uses a buffer (often on disk) to hold data for a device, allowing processes to 'write' to a slow device (like a printer) at CPU speeds without waiting. The spooler then feeds the data to the device at its own pace.",
+    "marks": 2
+  },
+  {
+    "text": "What is the primary advantage of using memory-mapped I/O over port-mapped I/O (I/O-mapped I/O)?",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "I/O Systems",
+    "options": [
+      "It uses special I/O instructions, which are faster.",
+      "It requires separate address spaces for memory and I/O devices.",
+      "It allows I/O devices to be accessed using regular memory access instructions, simplifying software development.",
+      "It eliminates the need for DMA controllers."
+    ],
+    "correctAnswer": "It allows I/O devices to be accessed using regular memory access instructions, simplifying software development.",
+    "explanation": "Memory-mapped I/O maps device registers and buffers directly into the CPU's memory address space. This allows the CPU to interact with I/O devices using standard memory load/store instructions, which can simplify software development and sometimes allow for more flexible addressing, as opposed to port-mapped I/O which uses dedicated I/O instructions.",
+    "marks": 3
+  },
+  {
+    "text": "Which of the following is NOT a typical service provided by the kernel's I/O subsystem?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "I/O Systems",
+    "options": [
+      "Buffering",
+      "Caching",
+      "Spooling",
+      "User interface rendering"
+    ],
+    "correctAnswer": "User interface rendering",
+    "explanation": "Buffering, caching, and spooling are common services provided by the kernel's I/O subsystem to improve efficiency and manage diverse I/O needs. User interface rendering is typically handled by graphical display servers and application-level frameworks, not directly by the kernel's I/O subsystem.",
+    "marks": 2
+  },
+  {
+    "text": "What is the term for a temporary storage area for data that is being transferred between two devices?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "I/O Systems",
+    "options": [
+      "Register",
+      "Cache",
+      "Buffer",
+      "Page table"
+    ],
+    "correctAnswer": "Buffer",
+    "explanation": "A buffer is a region of physical memory storage used to temporarily store data while it is being moved from one place to another or between devices. Caches store frequently accessed data for faster retrieval.",
+    "marks": 1
+  },
+  {
+    "text": "In a modern operating system, which mechanism is primarily responsible for handling I/O device errors and communicating them to the kernel?",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "I/O Systems",
+    "options": [
+      "Application-level error handlers",
+      "The CPU's error detection circuitry",
+      "The device driver in conjunction with the I/O controller and interrupt handler",
+      "The user process itself via a debugger"
+    ],
+    "correctAnswer": "The device driver in conjunction with the I/O controller and interrupt handler",
+    "explanation": "I/O controllers detect device errors and often report them by setting status bits or generating specific interrupts. The device driver's interrupt handler is then responsible for interpreting these error signals, logging them, and notifying the kernel's I/O subsystem, which can then take appropriate action (e.g., retrying the operation, terminating the process, reporting to the user).",
+    "marks": 3
+  },
+  {
+    "text": "The concept of 'device independence' in I/O systems means:",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "I/O Systems",
+    "options": [
+      "All devices must operate at the same speed.",
+      "Applications can access I/O devices without needing to know their specific physical characteristics.",
+      "Devices can operate without requiring an operating system.",
+      "All I/O operations must use DMA."
+    ],
+    "correctAnswer": "Applications can access I/O devices without needing to know their specific physical characteristics.",
+    "explanation": "Device independence means that applications can write to or read from a generic I/O device (e.g., 'a file' or 'a character stream') without needing to know the specific details of the underlying hardware (e.g., whether it's a hard disk, SSD, or network printer). The operating system, via device drivers, handles the translation to device-specific commands.",
+    "marks": 2
+  },
+  {
+    "text": "Which of the following is an example of a character-oriented I/O device?",
+    "type": "multiple_choice",
+    "difficulty": "Easy",
+    "subject": "Operating Systems",
+    "topic": "I/O Systems",
+    "options": [
+      "Solid State Drive (SSD)",
+      "CD-ROM drive",
+      "Keyboard",
+      "USB flash drive"
+    ],
+    "correctAnswer": "Keyboard",
+    "explanation": "Character-oriented devices handle data one character (or byte) at a time. A keyboard is a classic example. SSDs, CD-ROMs, and USB flash drives are typically block-oriented.",
+    "marks": 1
+  },
+  {
+    "text": "What is the main challenge addressed by an I/O scheduling algorithm for disk drives?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "I/O Systems",
+    "options": [
+      "Minimizing CPU context switch overhead.",
+      "Reducing the number of interrupts generated by the disk.",
+      "Optimizing disk head movement and average access time for multiple pending requests.",
+      "Ensuring fair allocation of CPU time to I/O-bound processes."
+    ],
+    "correctAnswer": "Optimizing disk head movement and average access time for multiple pending requests.",
+    "explanation": "Disk I/O scheduling algorithms (like FCFS, SSTF, SCAN, C-SCAN) aim to optimize the movement of the disk head to serve multiple read/write requests efficiently, thereby reducing the average access time and improving disk throughput.",
+    "marks": 2
+  },
+  {
+    "text": "Why is double buffering sometimes used in I/O operations?",
+    "type": "multiple_choice",
+    "difficulty": "Hard",
+    "subject": "Operating Systems",
+    "topic": "I/O Systems",
+    "options": [
+      "To allow two I/O devices to access memory simultaneously without conflict.",
+      "To encrypt data twice for enhanced security during transfer.",
+      "To allow a producer to fill one buffer while a consumer empties another, improving throughput and hiding latency.",
+      "To create a backup copy of data before writing to a device."
+    ],
+    "correctAnswer": "To allow a producer to fill one buffer while a consumer empties another, improving throughput and hiding latency.",
+    "explanation": "Double buffering uses two buffers. While one buffer is being filled by a producer (e.g., an I/O device or application), the other buffer can be emptied by a consumer (e.g., an application or I/O device). This overlapping of operations helps to smooth out data flow, reduce idle time, and improve overall I/O throughput by allowing continuous data transfer.",
+    "marks": 3
+  },
+  {
+    "text": "Which of the following best describes the 'polling' method for I/O?",
+    "type": "multiple_choice",
+    "difficulty": "Medium",
+    "subject": "Operating Systems",
+    "topic": "I/O Systems",
+    "options": [
+      "The CPU receives an interrupt from the I/O device when data is ready.",
+      "The I/O device directly accesses main memory without CPU intervention.",
+      "The CPU repeatedly checks the status register of an I/O device to see if it is ready for data transfer.",
+      "The operating system assigns a dedicated core to each I/O device for continuous monitoring."
+    ],
+    "correctAnswer": "The CPU repeatedly checks the status register of an I/O device to see if it is ready for data transfer.",
+    "explanation": "Polling involves the CPU actively and repeatedly checking the status of an I/O device in a loop until the device is ready. While simple, it can be very inefficient as the CPU wastes cycles waiting.",
+    "marks": 2
+  }
+]
