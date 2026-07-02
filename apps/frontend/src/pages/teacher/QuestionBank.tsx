@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import api from '../../services/api';
 import { Link } from 'react-router-dom';
-import { Upload, Plus, Trash2, Sparkles, Loader } from 'lucide-react';
+import { Upload, Plus, Trash2, } from 'lucide-react';
 
 const QuestionBank = () => {
   const [questions, setQuestions] = useState<any[]>([]);
@@ -93,16 +93,16 @@ const QuestionBank = () => {
           <form onSubmit={handleCreate}>
             <div className="row mb-3">
               <div className="col-md-4">
-                <select className="form-select form-control-custom" required value={formData.subjectId} onChange={e => setFormData({...formData, subjectId: e.target.value})}>
+                <select className="form-select form-control-custom" required value={formData.subjectId} onChange={e => setFormData({ ...formData, subjectId: e.target.value })}>
                   <option value="">Select Subject</option>
                   {subjects.map(s => <option key={s._id} value={s._id}>{s.name}</option>)}
                 </select>
               </div>
               <div className="col-md-4">
-                <input type="text" className="form-control form-control-custom" placeholder="Subtopic" required value={formData.subtopic} onChange={e => setFormData({...formData, subtopic: e.target.value})} />
+                <input type="text" className="form-control form-control-custom" placeholder="Subtopic" required value={formData.subtopic} onChange={e => setFormData({ ...formData, subtopic: e.target.value })} />
               </div>
               <div className="col-md-4">
-                <select className="form-select form-control-custom" required value={formData.difficulty} onChange={e => setFormData({...formData, difficulty: e.target.value})}>
+                <select className="form-select form-control-custom" required value={formData.difficulty} onChange={e => setFormData({ ...formData, difficulty: e.target.value })}>
                   <option value="Easy">Easy</option>
                   <option value="Medium">Medium</option>
                   <option value="Hard">Hard</option>
@@ -110,26 +110,26 @@ const QuestionBank = () => {
               </div>
             </div>
             <div className="mb-3">
-              <textarea className="form-control form-control-custom" rows={3} placeholder="Question Text" required value={formData.questionText} onChange={e => setFormData({...formData, questionText: e.target.value})}></textarea>
+              <textarea className="form-control form-control-custom" rows={3} placeholder="Question Text" required value={formData.questionText} onChange={e => setFormData({ ...formData, questionText: e.target.value })}></textarea>
             </div>
             <div className="row mb-3">
               {formData.options.map((opt, i) => (
                 <div className="col-md-6 mb-2" key={i}>
                   <div className="input-group">
                     <div className="input-group-text bg-white">
-                      <input type="radio" name="correctOpt" checked={formData.correctOptionIndex === i} onChange={() => setFormData({...formData, correctOptionIndex: i})} />
+                      <input type="radio" name="correctOpt" checked={formData.correctOptionIndex === i} onChange={() => setFormData({ ...formData, correctOptionIndex: i })} />
                     </div>
-                    <input type="text" className="form-control" placeholder={`Option ${i+1}`} required value={opt} onChange={e => {
+                    <input type="text" className="form-control" placeholder={`Option ${i + 1}`} required value={opt} onChange={e => {
                       const newOpts = [...formData.options];
                       newOpts[i] = e.target.value;
-                      setFormData({...formData, options: newOpts});
+                      setFormData({ ...formData, options: newOpts });
                     }} />
                   </div>
                 </div>
               ))}
             </div>
             <div className="mb-3">
-              <textarea className="form-control form-control-custom" rows={2} placeholder="Explanation (Optional)" value={formData.explanation} onChange={e => setFormData({...formData, explanation: e.target.value})}></textarea>
+              <textarea className="form-control form-control-custom" rows={2} placeholder="Explanation (Optional)" value={formData.explanation} onChange={e => setFormData({ ...formData, explanation: e.target.value })}></textarea>
             </div>
             <button type="submit" className="btn btn-success">Save Question</button>
           </form>
