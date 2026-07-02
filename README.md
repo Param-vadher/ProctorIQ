@@ -47,6 +47,12 @@
 
 ---
 
+## 🌍 Live Demo
+
+🚀 **Frontend deployed on Netlify:** [https://proctoriqp.netlify.app/](https://proctoriqp.netlify.app/)
+
+---
+
 ## 📖 What is ProctorIQ?
 
 > **ProctorIQ** is a next-generation, full-stack online examination platform engineered on a **Zero-Trust security architecture**. Built for institutions that demand airtight academic integrity.
