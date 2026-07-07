@@ -28,10 +28,29 @@ export class AuthService {
     if (!user) {
       throw new Error('Invalid credentials');
     }
+
+    // Check if account is locked
+    if (user.lockUntil && user.lockUntil > new Date()) {
+      throw new Error('Account locked due to too many failed attempts. Please try again later.');
+    }
+
     const isMatch = await bcrypt.compare(password, user.password!);
     if (!isMatch) {
+      user.failedLoginAttempts = (user.failedLoginAttempts || 0) + 1;
+      if (user.failedLoginAttempts >= 5) {
+        user.lockUntil = new Date(Date.now() + 15 * 60 * 1000); // Lock for 15 minutes
+      }
+      await user.save();
       throw new Error('Invalid credentials');
     }
+
+    // Reset login attempts on success
+    if (user.failedLoginAttempts > 0 || user.lockUntil) {
+      user.failedLoginAttempts = 0;
+      user.lockUntil = undefined;
+      await user.save();
+    }
+
     const token = jwt.sign({ userId: user._id, role: user.role }, config.jwtSecret, { expiresIn: '1d' });
     return { token, user: { id: user._id, name: user.name, email: user.email, role: user.role } };
   }

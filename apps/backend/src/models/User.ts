@@ -8,6 +8,8 @@ export interface IUser extends Document {
   phone?: string;
   profilePicture?: string;
   isDeleted: boolean;
+  failedLoginAttempts: number;
+  lockUntil?: Date;
   createdAt: Date;
 }
 
@@ -18,7 +20,9 @@ const userSchema = new Schema<IUser>({
   role: { type: String, enum: ['admin', 'teacher', 'student'], default: 'student' },
   phone: { type: String },
   profilePicture: { type: String, default: '' },
-  isDeleted: { type: Boolean, default: false }
+  isDeleted: { type: Boolean, default: false },
+  failedLoginAttempts: { type: Number, default: 0 },
+  lockUntil: { type: Date }
 }, { timestamps: true });
 
 userSchema.index({ role: 1, isDeleted: 1 });

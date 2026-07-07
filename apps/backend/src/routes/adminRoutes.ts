@@ -8,6 +8,11 @@ import {
   getSubmissions, getSubmissionReport,
   getUsers, createUser, updateUser, deleteUser
 } from '../controllers/adminController';
+import { validateData } from '../middleware/validateData';
+import { 
+  createSubjectSchema, createQuestionSchema, updateQuestionSchema,
+  createExamSchema, createUserSchema, updateUserSchema
+} from '../validations/admin.validation';
 
 const router = Router();
 
@@ -15,18 +20,18 @@ const router = Router();
 router.get('/dashboard-stats', getDashboardStats);
 
 // Subjects
-router.post('/subjects', createSubject);
+router.post('/subjects', validateData(createSubjectSchema), createSubject);
 router.get('/subjects', getSubjects);
 
 // Questions
-router.post('/questions', createQuestion);
+router.post('/questions', validateData(createQuestionSchema), createQuestion);
 router.get('/questions', getQuestions);
-router.put('/questions/:id', updateQuestion);
+router.put('/questions/:id', validateData(updateQuestionSchema), updateQuestion);
 router.delete('/questions/:id', deleteQuestion);
 router.post('/questions/bulk', bulkImportQuestions);
 
 // Exams
-router.post('/exams', createExam);
+router.post('/exams', validateData(createExamSchema), createExam);
 router.get('/exams', getExams);
 
 // Live Proctoring
@@ -39,8 +44,8 @@ router.get('/submissions/:id/report', getSubmissionReport);
 
 // Users (Admin Only)
 router.get('/users', getUsers);
-router.post('/users', createUser);
-router.put('/users/:id', updateUser);
+router.post('/users', validateData(createUserSchema), createUser);
+router.put('/users/:id', validateData(updateUserSchema), updateUser);
 router.delete('/users/:id', deleteUser);
 
 export default router;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import api from '../../services/api';
 import { Link } from 'react-router-dom';
-import { Upload, Plus, Trash2, } from 'lucide-react';
+import { Upload, Plus, Trash2 } from 'lucide-react';
 
 const QuestionBank = () => {
   const [questions, setQuestions] = useState<any[]>([]);
