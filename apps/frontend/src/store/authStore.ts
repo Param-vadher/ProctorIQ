@@ -30,7 +30,7 @@ export const useAuthStore = create<AuthState>((set) => ({
     try {
       const res = await api.get('/auth/profile');
       set({ user: res.data.data, isAuthenticated: true, isLoading: false });
-    } catch (error) {
+    } catch {
       set({ user: null, isAuthenticated: false, isLoading: false });
     }
   },
