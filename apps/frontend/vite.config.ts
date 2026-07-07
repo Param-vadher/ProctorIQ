@@ -10,6 +10,9 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: ['./src/setupTests.ts']
   } as any,
+  build: {
+    chunkSizeWarningLimit: 1600,
+  },
   plugins: [
     react(),
     // Scrambles the frontend code during the production build
