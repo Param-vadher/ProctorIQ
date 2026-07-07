@@ -15,6 +15,22 @@ export default defineConfig({
   },
   plugins: [
     react(),
-    obfuscatorPlugin(),
+    obfuscatorPlugin({
+      global: false,
+      options: {
+        compact: true,
+        controlFlowFlattening: false,
+        deadCodeInjection: false,
+        debugProtection: false,
+        disableConsoleOutput: true,
+        identifierNamesGenerator: 'hexadecimal',
+        log: false,
+        renameGlobals: false,
+        stringArray: true,
+        stringArrayEncoding: ['none'],
+        stringArrayThreshold: 0.75,
+        unicodeEscapeSequence: false
+      }
+    })
   ],
 })
