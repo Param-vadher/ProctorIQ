@@ -6,6 +6,7 @@ import obfuscatorPlugin from 'rollup-plugin-obfuscator'
 // https://vite.dev/config/
 export default defineConfig({
   test: {
+    globals: true,
     environment: 'jsdom',
     setupFiles: ['./src/setupTests.ts']
   } as any,
